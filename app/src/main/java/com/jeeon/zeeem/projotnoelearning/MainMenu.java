@@ -17,9 +17,27 @@ public class MainMenu extends Activity {
         setContentView(R.layout.activity_main_menu);
     }
 
-    //DISABLE back button on menu
+    //double back to exit
     @Override
     public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+
+            System.exit(0);
+
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit",
+                Toast.LENGTH_SHORT).show();
+
+    }
+
+    //go to next page activity
+    public void goToNext1(View v){
+        Intent intent = new Intent(this, EyeSlider.class);
+        startActivity(intent);
+
     }
 
     //button click activities
@@ -28,8 +46,8 @@ public class MainMenu extends Activity {
     }
 
     public void goToEyeSlide(View view) {
-        //Intent intent = new Intent(this, EyeSlide.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, EyeSlider.class);
+        startActivity(intent);
     }
 
 }

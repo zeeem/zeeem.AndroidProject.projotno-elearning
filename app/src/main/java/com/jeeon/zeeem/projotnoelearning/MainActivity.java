@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, MainMenu.class);
                 startActivity(intent);
+                finish();
 
             }
             public void onSwipeLeft() {
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 //Swipe left to go to next page
                 Intent intent = new Intent(MainActivity.this, MainMenu.class);
                 startActivity(intent);
-
+                finish();
 
             }
             public void onSwipeBottom() {

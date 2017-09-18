@@ -8,5 +8,6 @@
     <string name="title_activity_eye_slider">EyeSlider</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-
+    <string name="title_homepage">Homepage</string>
+    <string name="title_registration">Registration</string>
 </resources>

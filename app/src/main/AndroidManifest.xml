@@ -23,7 +23,11 @@
         <activity
             android:name=".EyeSlider"
             android:label="@string/title_activity_eye_slider"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Registration"
+                  android:label="@string/title_registration"/>
+        <activity android:name=".HomePage"
+                  android:label="@string/title_homepage"></activity>
     </application>
 
 </manifest>

@@ -90,9 +90,9 @@ public class EyeSlider extends AppCompatActivity {
     //go to nextpage
     public void goToNextPageFUNCITON(){
 
-//        Intent intent = new Intent(this, MainMenu.class);
-//        startActivity(intent);
-//        finish();
+        Intent intent = new Intent(this, Registration.class);
+        startActivity(intent);
+        finish();
 
     }
 

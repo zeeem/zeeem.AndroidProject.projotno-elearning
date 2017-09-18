@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Projotno eLearning</string>
+    <string name="eye_button">চক্ষু বিষয়ক বিষয়বস্তু</string>
+    <string name="diabetic_button">ডায়াবেটিক বিষয়ক বিষয়বস্তু</string>
+    <string name="kidney_button">কিডনী বিষয়ক বিষয়বস্তু</string>
+    <string name="nutrition_button">পুষ্টি বিষয়ক বিষয়বস্তু</string>
 </resources>

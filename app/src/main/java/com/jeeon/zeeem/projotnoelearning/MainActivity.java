@@ -28,20 +28,26 @@ public class MainActivity extends AppCompatActivity {
         //onSwipe Listener
         slideImage.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this) {
             public void onSwipeTop() {
-                Toast.makeText(MainActivity.this, "Swipe left to go to next page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Swipe left/right to go to next page", Toast.LENGTH_SHORT).show();
             }
             public void onSwipeRight() {
-                Toast.makeText(MainActivity.this, "Swipe left to go to next page", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Swipe left to go to next page", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this, MainMenu.class);
+                startActivity(intent);
 
             }
             public void onSwipeLeft() {
-                Toast.makeText(MainActivity.this, "swipe left - worked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "swipe left - worked", Toast.LENGTH_SHORT).show();
 
                 //Swipe left to go to next page
+                Intent intent = new Intent(MainActivity.this, MainMenu.class);
+                startActivity(intent);
+
 
             }
             public void onSwipeBottom() {
-                Toast.makeText(MainActivity.this, "Swipe left to go to next page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Swipe left/right to go to next page", Toast.LENGTH_SHORT).show();
             }
 
         });

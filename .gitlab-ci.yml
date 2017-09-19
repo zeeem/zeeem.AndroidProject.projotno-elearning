@@ -1,0 +1,51 @@
+#################################
+# GitLab Continuous Integration #
+#################################
+
+stages:
+  - build
+  - test
+  - deploy
+
+#-------
+# Build
+#-------
+
+job_build_development:
+  stage: build
+  only:
+    - master
+  image: alvrme/alpine-android:latest
+  artifacts:
+    paths:
+      - app/build/outputs/apk/
+  environment:
+    name: development
+  script:
+    - ./gradlew assembleDebug
+
+#------
+# Test
+#------
+
+#job_test:
+#  stage: test
+#  only:
+#    - master
+#  image: alvrme/alpine-android:latest
+#  script:
+#    - ./gradlew testDebug
+
+#--------
+# Deploy
+#--------
+
+#job_deploy_development:
+#  stage: deploy
+#  only:
+#    - master
+#  image: chrsep/fastlane-docker:latest
+#  environment:
+#    name: development
+#  script:
+#    - fastlane supply --apk app/build/outputs/apk/app-debug.apk

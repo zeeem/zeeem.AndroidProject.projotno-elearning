@@ -22,7 +22,7 @@ job_build_development:
   environment:
     name: development
   script:
-    - ./gradlew assembleDebug
+    - bash gradlew assembleDebug
 
 #------
 # Test
@@ -34,7 +34,7 @@ job_build_development:
 #    - master
 #  image: alvrme/alpine-android:latest
 #  script:
-#    - ./gradlew testDebug
+#    - bash gradlew testDebug
 
 #--------
 # Deploy

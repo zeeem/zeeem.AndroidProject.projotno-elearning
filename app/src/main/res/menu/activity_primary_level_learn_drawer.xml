@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_learn"
+            android:title="শিখুন">
+            <menu>
+                <item
+                    android:id="@+id/nav_primaryL1"
+                    android:title="ধাপ-১: প্রাইমারী" />
+                <item
+                    android:id="@+id/nav_primaryL2"
+                    android:title="ধাপ-২: সেকেন্ডারী" />
+                <item
+                    android:id="@+id/nav_primaryL3"
+                    android:title="ধাপ-৩: এ্যাডভানসড" />
+                <item
+                    android:id="@+id/nav_primaryL4"
+                    android:title="ধাপ-৪: প্রোফেশনাল" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/solve"
+            android:title="কেস সমাধান করুন"
+            android:visible="true">
+            <menu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <item
+                    android:id="@+id/nav_primaryCS1"
+                    android:title="ধাপ-১: প্রাইমারী"
+                    />
+                <item
+                    android:id="@+id/nav_primaryCS2"
+                    android:title="ধাপ-২: সেকেন্ডারী"
+                    />
+                <item
+                    android:id="@+id/nav_primaryCS3"
+                    android:title="ধাপ-৩: এ্যাডভানসড"
+                    />
+                <item
+                    android:id="@+id/nav_primaryCS4"
+                    android:title="ধাপ-৪: প্রোফেশনাল"
+                    />
+            </menu>
+        </item>
+    </group>
+
+</menu>

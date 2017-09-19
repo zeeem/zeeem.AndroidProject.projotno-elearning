@@ -38,6 +38,11 @@
             android:name=".CaseSolvingLevels"
             android:label="Case Solving Levels"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrimaryLevelLearn"
+            android:label="@string/title_activity_primary_level_learn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Primary1_PreTest"></activity>
     </application>
 
 </manifest>

@@ -53,8 +53,8 @@ public class LearningLevels extends AppCompatActivity
     }
 
     public void primaryLearnButtonClick(View view){
-//        Intent intent = new Intent(this, LearningLevels.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, PrimaryLevelLearn.class);
+        startActivity(intent);
 
 //        StaticLogics.isCaseSolvingUnlocked = true; //for testing only
 
@@ -70,12 +70,20 @@ public class LearningLevels extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_LearnLevel) {
-            Intent intent = new Intent(this, Registration.class);
+            Intent intent = new Intent(this, LearningLevels.class);
             startActivity(intent);
 
 
         } else if (id == R.id.nav_CaseSolve) {
-
+            //if unlocked do
+            if(StaticLogics.isCaseSolvingUnlocked){
+                Intent intent = new Intent(this, CaseSolvingLevels.class);
+                startActivity(intent);
+            }
+            //if not toast
+            else {
+                Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+            }
         }
 
 

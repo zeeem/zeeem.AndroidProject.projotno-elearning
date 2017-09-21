@@ -52,8 +52,13 @@ public class CaseSolvingLevels extends AppCompatActivity
     }
 
     public void primarySolveButtonClick(View view){
+
+
+
 //        Intent intent = new Intent(this, LearningLevels.class);
 //        startActivity(intent);
+
+
     }
 
 
@@ -66,11 +71,13 @@ public class CaseSolvingLevels extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_LearnLevel) {
-            Intent intent = new Intent(this, Registration.class);
+            Intent intent = new Intent(this, LearningLevels.class);
             startActivity(intent);
 
 
         } else if (id == R.id.nav_CaseSolve) {
+            Intent intent = new Intent(this, CaseSolvingLevels.class);
+            startActivity(intent);
 
         }
 

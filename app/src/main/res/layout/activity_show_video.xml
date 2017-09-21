@@ -17,17 +17,17 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="প্র-১: নিচের তির চিহ্নিত অংশটির নাম কি? "
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
-    <ImageView
+    <VideoView
         android:id="@+id/videoFrame_showVideo"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="165dp"
         android:layout_margin="15dp"
-        android:layout_weight="0.17"
-        app:srcCompat="@drawable/pl_pt_video" />
+        android:layout_weight="0.29" />
 
     <Button
         android:id="@+id/nextQuesButton_showVideo"

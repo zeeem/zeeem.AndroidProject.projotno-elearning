@@ -236,6 +236,12 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
         } else if (id == R.id.nav_primaryCS4) {
 
+            //for testing purpose only
+//            StaticLogics.current_PrimaryLearning_LevelRunning=1;
+//            Intent intent = new Intent(this, ShowVideo.class);
+//            startActivity(intent);
+
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

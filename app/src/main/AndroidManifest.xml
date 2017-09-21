@@ -44,7 +44,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Primary1_PreTest" />
         <activity android:name=".ShowVideo" />
-        <activity android:name=".TestResult"></activity>
+        <activity android:name=".TestResult" />
+        <activity
+            android:name=".PrimaryLevelCsaeSolve"
+            android:label="@string/title_activity_primary_level_csae_solve"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CaseSymptom" />
+        <activity android:name=".CaseInquiryQuestion" />
+        <activity android:name=".CaseQuestions" />
+        <activity android:name=".SelectDisease"></activity>
     </application>
 
 </manifest>

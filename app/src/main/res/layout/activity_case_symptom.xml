@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|fill_vertical|center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/preTest_introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/pretest_textbox"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="নিম্নের রোগীর অভিযোগটি মনোযোগ সহকারে পড়ুন"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/questionPT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="নিম্নের রোগীর অভিযোগটি মনোযোগ সহকারে পড়ুন"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageCaseSymptom"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/case_symptom_1" />
+
+    <TextView
+        android:id="@+id/textCaseSynptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text=" ১০ বছরের একটি ছেলে তার মায়ের সাথে আপনার চেম্বারে এলো। মায়ের কথা মোতাবেক গত ২ দিন হলো ছেলেটির চোখ লাল হয়েছে ও পিচুটি ঝরছে।"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/nextStep_CaseSolve"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/colorEdgeEffect"
+        android:onClick="gotoNextCaseStep"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="পরবর্তী ধাপে  যান"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

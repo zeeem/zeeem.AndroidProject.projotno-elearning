@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/homepage_b2_open"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/case_dialog_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="এই ক্ষেত্রে এই প্রশ্নটি করা উচিত হয় নি। কারন এ ধরনের রোগীর ক্ষেত্রে চোখের ভেতরে খচ খচ করে না।"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/nextCaseQuestion"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="?android:attr/colorEdgeEffect"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="পরবতী প্রশ্নে যান"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

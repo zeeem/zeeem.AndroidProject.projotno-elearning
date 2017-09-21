@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|fill_vertical|center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/preTest_introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/pretest_textbox"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="নিম্নের রোগীর অভিযোগটি মনোযোগ সহকারে পড়ুন"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/questionPT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="রোগের উপসগ ও লক্ষণ নিণয় "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textCaseSynptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="রোগীর রোগটি সঠিকভাবে নিণয় করার জন্য নিম্নের কোন লক্ষনগুলো রোগীর কাছ থেকে জানতে হবে?"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/nextStep_CaseSolve"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/colorEdgeEffect"
+        android:onClick="goToNextQuestion_PT"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="পরবর্তী ধাপে  যান"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/case_q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_yellow"
+                android:onClick="goToNextCaseStep"
+                android:text="১। চোখ দিয়ে পানি ঝরছে কিনা এটি জিজ্ঞেস করবেন কি ? "
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/case_q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="lockedCaseLevels"
+                android:text="২। চোখের দৃষ্টি শক্তি হঠাৎ করে কমে গেছে কিনা এটি জিজ্ঞেস করবেন কি?"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/case_q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="lockedCaseLevels"
+                android:text="৩।চোখের ভেতরে কি খচ খচ করছে এটি জিজ্ঞেস করবেন কি? "
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/case_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="lockedCaseLevels"
+                android:text="৪। সকালে পিচুটি জমে চোখের পাতা আটকে থাকে এটি জিজ্ঞেস করবেন কি?"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/case_q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="lockedCaseLevels"
+                android:text="৫। চোখে হঠাৎ করে প্রচন্ড ব্যথা শুরু হয়েছে এটি জিজ্ঞেস করবেন কি?"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/case_q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="lockedCaseLevels"
+                android:text="৬।সম্প্রতি চোখ উঠেছে এ রকম কারো সংগে ছেলেটি মেলামেশা করেছে কিনা এটি জিজ্ঞেস করবেন কি? "
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

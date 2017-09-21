@@ -6,12 +6,14 @@ package com.jeeon.zeeem.projotnoelearning;
 
 public class StaticLogics {
 
-    public static boolean isCaseSolvingUnlocked = false;
+    public static boolean isCaseSolvingUnlocked = true;
+    //this should be false as defauult
 
     public static boolean isPrimaryLearn2Unlocked = false;
     public static boolean isPrimaryLearn3Unlocked = false;
 
-    public static boolean isPrimaryCaseSolve1Unlocked = false;
+    public static boolean isPrimaryCaseSolve1Unlocked = false; //no need
+    public static int current_PrimaryCaseSolve_LevelRunning = 0;
 
 
     //to count question number of primary learn 1 - PRE TEST
@@ -24,5 +26,7 @@ public class StaticLogics {
     //public static int PostTquestionNum = 1; //its the same as the pretest numbers
     public static boolean isPostTestCompleted = false;
     public static int PrimaryLearn1_PostT_score = 0;
+
+    public static double PrimaryCaseSolveScore = 0;
 
 }

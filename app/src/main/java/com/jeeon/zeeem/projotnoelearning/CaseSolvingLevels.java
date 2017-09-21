@@ -53,11 +53,8 @@ public class CaseSolvingLevels extends AppCompatActivity
 
     public void primarySolveButtonClick(View view){
 
-
-
-//        Intent intent = new Intent(this, LearningLevels.class);
-//        startActivity(intent);
-
+        Intent intent = new Intent(this, PrimaryLevelCsaeSolve.class);
+        startActivity(intent);
 
     }
 

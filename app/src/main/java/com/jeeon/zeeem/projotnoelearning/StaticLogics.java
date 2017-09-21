@@ -16,7 +16,13 @@ public class StaticLogics {
 
     //to count question number of primary learn 1 - PRE TEST
     public static int PTquestionNum = 1;
-
+    public static boolean isPreTestCompleted = false; //to determine the test title (pre-test or post-test)
     public static int PrimaryLearn1_PT_score = 0;
+
+    public static int current_PrimaryLearning_LevelRunning = 0;
+    //to count question number of primary learn 1 - POST TEST
+    //public static int PostTquestionNum = 1; //its the same as the pretest numbers
+    public static boolean isPostTestCompleted = false;
+    public static int PrimaryLearn1_PostT_score = 0;
 
 }

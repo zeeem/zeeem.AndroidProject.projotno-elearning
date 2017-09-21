@@ -42,7 +42,9 @@
             android:name=".PrimaryLevelLearn"
             android:label="@string/title_activity_primary_level_learn"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Primary1_PreTest"></activity>
+        <activity android:name=".Primary1_PreTest" />
+        <activity android:name=".ShowVideo" />
+        <activity android:name=".TestResult"></activity>
     </application>
 
 </manifest>

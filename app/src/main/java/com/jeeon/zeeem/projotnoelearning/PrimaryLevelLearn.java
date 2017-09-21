@@ -34,8 +34,10 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
+        StaticLogics.PrimaryLearn1_PostT_score=0;
     }
 
     //making the question count 1
@@ -44,11 +46,18 @@ public class PrimaryLevelLearn extends AppCompatActivity
         super.onResume();
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
+        StaticLogics.PrimaryLearn1_PostT_score=0;
     }
 
     //go to pre test
     //button activity
     public void goToPreTest_PrimaryLearn1(View v){
+
+        StaticLogics.PTquestionNum=1;
+        StaticLogics.PrimaryLearn1_PT_score=0;
+        StaticLogics.PrimaryLearn1_PostT_score=0;
+        StaticLogics.current_PrimaryLearning_LevelRunning = 1;
+
         Intent intent = new Intent(this, Primary1_PreTest.class);
         startActivity(intent);
     }

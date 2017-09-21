@@ -60,8 +60,36 @@ public class TestResult extends AppCompatActivity {
                 CommentForResult.setText("আপনার পোস্ট-টেস্ট স্কোর ৮০% এর কম হয়েছে");
                 goToNextButton.setText("আবার চেষ্টা করুন!");
             }
+        }
+        else if(StaticLogics.current_PrimaryLearning_LevelRunning==2) {
+            ResultTitle.setText("কনজাঙ্কটিভাইটিস টেস্টের ফলাফল");
+            PreTestScore.setText(Double.toString(Final_PretestResult));
+            PostTestScore.setText(Double.toString(Final_PostTestResult));
 
+            if (StaticLogics.isPostTestCompleted) {
+                //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
+                CommentForResult.setVisibility(View.GONE);
+                goToNextButton.setText("পরবতী ধাপে যান");
+            } else {
+                // Toast.makeText(this, "POST false - found", Toast.LENGTH_SHORT).show();
+                CommentForResult.setText("আপনার পোস্ট-টেস্ট স্কোর ৮০% এর কম হয়েছে");
+                goToNextButton.setText("আবার চেষ্টা করুন!");
+            }
+        }
+        else if(StaticLogics.current_PrimaryLearning_LevelRunning==3) {
+            ResultTitle.setText("গ্লোকুমা টেস্টের ফলাফল");
+            PreTestScore.setText(Double.toString(Final_PretestResult));
+            PostTestScore.setText(Double.toString(Final_PostTestResult));
 
+            if (StaticLogics.isPostTestCompleted) {
+                //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
+                CommentForResult.setVisibility(View.GONE);
+                goToNextButton.setText("পরবতী ধাপে যান");
+            } else {
+                // Toast.makeText(this, "POST false - found", Toast.LENGTH_SHORT).show();
+                CommentForResult.setText("আপনার পোস্ট-টেস্ট স্কোর ৮০% এর কম হয়েছে");
+                goToNextButton.setText("আবার চেষ্টা করুন!");
+            }
         }
 
     }
@@ -78,7 +106,7 @@ public class TestResult extends AppCompatActivity {
         StaticLogics.PrimaryLearn1_PT_score = 0;
         StaticLogics.PrimaryLearn1_PostT_score =0;
         StaticLogics.PTquestionNum =1;
-        Toast.makeText(this, "new level=" + StaticLogics.current_PrimaryLearning_LevelRunning , Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "new level=" + StaticLogics.current_PrimaryLearning_LevelRunning , Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, PrimaryLevelLearn.class);
         startActivity(intent);

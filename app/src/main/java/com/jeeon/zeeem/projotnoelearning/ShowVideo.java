@@ -27,8 +27,12 @@ public class ShowVideo extends AppCompatActivity {
             videoFrame_showVideo.setBackgroundResource(R.drawable.pl_pt_video);
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==2){
-            //text_showVideo.setText("চোখের প্রাথমিক ধারনা সম্পকিত ভিডিওটি দেখুন");
-            // videoFrame_showVideo.setBackgroundResource(R.drawable.pl_pt_video);
+            text_showVideo.setText(" কনজান্কটিভাইটিস  সম্পকিত ভিডিওটি দেখুন");
+            videoFrame_showVideo.setBackgroundResource(R.drawable.pl2_pt_video);
+        }
+        else if(StaticLogics.current_PrimaryLearning_LevelRunning==3){
+             text_showVideo.setText("গ্লোকুমা সম্পকিত ভিডিওটি দেখুন");
+             videoFrame_showVideo.setBackgroundResource(R.drawable.pl3_pt_video);
         }
 
 

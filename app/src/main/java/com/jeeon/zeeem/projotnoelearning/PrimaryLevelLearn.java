@@ -2,6 +2,7 @@ package com.jeeon.zeeem.projotnoelearning;
 
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,10 +15,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class PrimaryLevelLearn extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button primaryL1, primaryL2, primaryL3, primaryL4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,53 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        primaryL1 = (Button) findViewById(R.id.primaryLearn1);
+        primaryL2 = (Button) findViewById(R.id.primaryLearn2);
+        primaryL3 = (Button) findViewById(R.id.primaryLearn3);
+        primaryL4 = (Button) findViewById(R.id.primaryLearn4);
+
+        if(StaticLogics.current_PrimaryLearning_LevelRunning==2){
+            primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
+            primaryL2.setBackgroundResource(R.drawable.primary_unlocked_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL2.setForeground(null);
+            }
+
+
+        }
+        else if(StaticLogics.current_PrimaryLearning_LevelRunning==3){
+
+            primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
+            primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL2.setForeground(null);
+            }
+            primaryL3.setBackgroundResource(R.drawable.primary_unlocked_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL3.setForeground(null);
+            }
+        }
+        else if(StaticLogics.current_PrimaryLearning_LevelRunning==4){
+
+            primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
+            primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL2.setForeground(null);
+            }
+            primaryL3.setBackgroundResource(R.drawable.primary_completed_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL3.setForeground(null);
+            }
+            primaryL4.setBackgroundResource(R.drawable.primary_unlocked_btn);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                primaryL4.setForeground(null);
+            }
+
+            Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
+            StaticLogics.isCaseSolvingUnlocked = true;
+
+        }
 
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
@@ -56,10 +107,48 @@ public class PrimaryLevelLearn extends AppCompatActivity
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
         StaticLogics.PrimaryLearn1_PostT_score=0;
+        if(StaticLogics.current_PrimaryLearning_LevelRunning<1)
         StaticLogics.current_PrimaryLearning_LevelRunning = 1;
 
         Intent intent = new Intent(this, Primary1_PreTest.class);
         startActivity(intent);
+        finish();
+    }
+
+    public void goToPreTest_PrimaryLearn2(View v){
+
+        if(StaticLogics.current_PrimaryLearning_LevelRunning>1 ) {
+            StaticLogics.PTquestionNum = 1;
+            StaticLogics.PrimaryLearn1_PT_score = 0;
+            StaticLogics.PrimaryLearn1_PostT_score = 0;
+           // StaticLogics.current_PrimaryLearning_LevelRunning = 2;
+
+            Intent intent = new Intent(this, Primary1_PreTest.class);
+            startActivity(intent);
+            finish();
+        }
+        else Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+    }
+
+    public void goToPreTest_PrimaryLearn3 (View v){
+
+        if(StaticLogics.current_PrimaryLearning_LevelRunning>2 ) {
+            StaticLogics.PTquestionNum = 1;
+            StaticLogics.PrimaryLearn1_PT_score = 0;
+            StaticLogics.PrimaryLearn1_PostT_score = 0;
+            //StaticLogics.current_PrimaryLearning_LevelRunning = 3;
+
+            Intent intent = new Intent(this, Primary1_PreTest.class);
+            startActivity(intent);
+            finish();
+        }
+        else Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+    }
+
+    public void locked_PrimaryLearnLevels (View v){
+
+        Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+
     }
 
 
@@ -131,7 +220,7 @@ public class PrimaryLevelLearn extends AppCompatActivity
             if(StaticLogics.isPrimaryCaseSolve1Unlocked){
                 //need to start the main pre-TEST
                 //its a dummy for test now
-//                Intent intent = new Intent(this, PrimaryLevelSolve1.class);
+//                Intent intent = new Intent(this, CaseSolvingLevels.class);
 //                startActivity(intent);
             }
 

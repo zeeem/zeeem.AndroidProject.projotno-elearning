@@ -35,7 +35,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/primary"
+                    android:id="@+id/primaryLearn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -50,7 +50,7 @@
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/button77"
+                    android:id="@+id/primaryLearn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -61,6 +61,7 @@
                     android:background="@drawable/primary_locked_btn"
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
+                    android:onClick="goToPreTest_PrimaryLearn2"
                     android:text="লকনজাঙ্কটিভাইটিস/ চোখ ওঠা"
                     android:textAlignment="center"
                     android:textSize="20sp" />
@@ -72,7 +73,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button747"
+                    android:id="@+id/primaryLearn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -83,12 +84,13 @@
                     android:background="@drawable/primary_locked_btn"
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
+                    android:onClick="goToPreTest_PrimaryLearn3"
                     android:text="গ্লুকোমা"
                     android:textAlignment="center"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/button6123"
+                    android:id="@+id/primaryLearn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -98,6 +100,7 @@
                     android:background="@drawable/primary_locked_btn"
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
+                    android:onClick="locked_PrimaryLearnLevels"
                     android:text="ক্যাটারাক্ট / চোখের ছানি"
                     android:textAlignment="center"
                     android:textSize="20sp" />
@@ -121,6 +124,7 @@
                     android:background="@drawable/primary_locked_btn"
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
+                    android:onClick="locked_PrimaryLearnLevels"
                     android:text="রাতকানা"
                     android:textAlignment="center"
                     android:textSize="20sp" />
@@ -137,6 +141,7 @@
                     android:background="@drawable/primary_locked_btn"
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
+                    android:onClick="locked_PrimaryLearnLevels"
                     android:text="ট্যারা চোখ"
                     android:textAlignment="center"
                     android:textSize="20sp" />

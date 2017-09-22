@@ -29,6 +29,10 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //making multiple ans false for next attept
+        StaticLogics.mul_treatment_Ans_count_1 = false;
+        StaticLogics.mul_treatment_Ans_count_2=false;
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -43,14 +47,14 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         primaryCS3 = (Button) findViewById(R.id.primaryCase3);
         primaryCS4 = (Button) findViewById(R.id.primaryCase4);
 
-        if(StaticLogics.current_PrimaryCaseSolve_LevelRunning==2){
+        if(StaticLogics.unlocked_case_solved_level>1){
             primaryCS1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryCS2.setBackgroundResource(R.drawable.primary_unlocked_btn);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 primaryCS2.setForeground(null);
             }
         }
-        else if(StaticLogics.current_PrimaryLearning_LevelRunning==3){
+        else if(StaticLogics.unlocked_case_solved_level>2){
 
             primaryCS1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryCS2.setBackgroundResource(R.drawable.primary_completed_btn);
@@ -72,10 +76,11 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
 
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryCaseSolveScore=0;
-        if(StaticLogics.current_PrimaryCaseSolve_LevelRunning<1)
-            StaticLogics.current_PrimaryCaseSolve_LevelRunning = 1;
+        if(StaticLogics.unlocked_case_solved_level<1)
+            StaticLogics.unlocked_case_solved_level = 1;
 
-        //intent should be fixed
+        StaticLogics.current_PrimaryCaseSolve_LevelRunning = 1;
+
         Intent intent = new Intent(this, CaseSymptom.class);
         startActivity(intent);
         finish();
@@ -83,10 +88,11 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
 
     public void goToPrimaryCase2(View v){
 
-        if(StaticLogics.current_PrimaryCaseSolve_LevelRunning>1 ) {
+        if(StaticLogics.unlocked_case_solved_level>1 ) {
             StaticLogics.PTquestionNum=1;
             StaticLogics.PrimaryCaseSolveScore=0;
-            // StaticLogics.current_PrimaryLearning_LevelRunning = 2;
+
+            StaticLogics.current_PrimaryCaseSolve_LevelRunning = 2;
 
             Intent intent = new Intent(this, CaseSymptom.class);
             startActivity(intent);
@@ -108,6 +114,9 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         super.onResume();
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryCaseSolveScore=0;
+
+        StaticLogics.mul_treatment_Ans_count_1 = false;
+        StaticLogics.mul_treatment_Ans_count_2 = false;
     }
 
 
@@ -129,9 +138,7 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_primaryL1) {
-
             //need to start the main pre-TEST
-            //its a dummy for test now
             Intent intent = new Intent(this, PrimaryLevelLearn.class);
             startActivity(intent);
 
@@ -172,6 +179,8 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
 
         } else if (id == R.id.nav_primaryL4) {
 
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+
         } else if (id == R.id.nav_primaryCS1) {
 
             //if unlocked do
@@ -189,16 +198,18 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
 
 
         } else if (id == R.id.nav_primaryCS2) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_primaryCS3) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_primaryCS4) {
-
-            //for testing purpose only
-//            StaticLogics.current_PrimaryLearning_LevelRunning=1;
-//            Intent intent = new Intent(this, ShowVideo.class);
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+//
+//            //for testing purpose only
+//            StaticLogics.current_PrimaryCaseSolve_LevelRunning=1;
+//            Intent intent = new Intent(this, SelectDisease.class);
 //            startActivity(intent);
-
 
         }
 

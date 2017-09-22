@@ -15,6 +15,10 @@ public class StaticLogics {
     public static boolean isPrimaryCaseSolve1Unlocked = false; //no need
     public static int current_PrimaryCaseSolve_LevelRunning = 0;
 
+    public static int unlocked_case_solved_level = 2;
+    public static int unlocked_primary_Learn_level = 0;
+
+
 
     //to count question number of primary learn 1 - PRE TEST
     public static int PTquestionNum = 1;
@@ -28,5 +32,10 @@ public class StaticLogics {
     public static int PrimaryLearn1_PostT_score = 0;
 
     public static double PrimaryCaseSolveScore = 0;
+
+    //checking multiple ans in treatment selection
+    public static boolean mul_treatment_Ans_count_1 = false;
+    public static boolean mul_treatment_Ans_count_2 = false;
+
 
 }

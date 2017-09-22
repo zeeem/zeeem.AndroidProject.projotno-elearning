@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|fill_vertical|center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textCaseQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="চিকিৎসা প্রদান"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/treatmentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/case_inquiry_btn_white"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="নিম্নে কনজাঙ্কটিভাইটিস এর জন্য সম্ভাব্য কয়েকটি চিকিৎসা উল্লেখ করা হয়েছে। আপনি উপযুক্ত চিকিৎসাগুলো নিবাচন করুন"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayoutToShuffle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/treatmentBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="treatmentBtn1_clicked"
+            android:paddingLeft="10dp"
+            android:text="এ্যাট্রোপিন ১% আই ড্রপ "
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/treatmentBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="treatmentBtn2_clicked"
+            android:paddingLeft="10dp"
+            android:text="ক্লোরামফেনিকল ০.৫% আই ড্রপ "
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/treatmentBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="treatmentBtn3_clicked"
+            android:paddingLeft="10dp"
+            android:text="রেফার করে দিন"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/treatmentBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="?attr/colorControlHighlight"
+            android:onClick="treatmentBtn4_clicked"
+            android:paddingLeft="10dp"
+            android:text="হোম টিপস্"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

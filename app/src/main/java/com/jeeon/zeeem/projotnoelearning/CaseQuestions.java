@@ -71,7 +71,7 @@ public class CaseQuestions extends AppCompatActivity {
 
                 case 7:
                     StaticLogics.PTquestionNum = 1;
-                    StaticLogics.isPreTestCompleted = true;
+                    //StaticLogics.isPreTestCompleted = true;
                     Intent i = new Intent(this, SelectDisease.class);
                     startActivity(i);
                     finish();
@@ -133,7 +133,7 @@ public class CaseQuestions extends AppCompatActivity {
 
                 case 7:
                     StaticLogics.PTquestionNum = 1;
-                    StaticLogics.isPreTestCompleted = true;
+                    //StaticLogics.isPreTestCompleted = true;
                     Intent i = new Intent(this, SelectDisease.class);
                     startActivity(i);
                     finish();
@@ -199,7 +199,7 @@ public class CaseQuestions extends AppCompatActivity {
 
 
 
-            Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
 
             nextCaseQuestion.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -216,6 +216,52 @@ public class CaseQuestions extends AppCompatActivity {
 
         else if (StaticLogics.current_PrimaryCaseSolve_LevelRunning==2){
 
+            switch (StaticLogics.PTquestionNum) {
+                case 1:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত হয় নি। কারন এ ধরনের রোগীর ক্ষেত্রে চোখ দিয়ে পূঁজের মত পিচুটি বের হয় না।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+                    break;
+                case 2:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রত কমে আসতে পারে এবং আসলেই রোগীর এ সমস্যাটি আছে।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+
+                    break;
+                case 3:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে চোখে এবং মাথায় প্রচন্ড ব্যাথা থাকে এবং আসলেই রোগীর এ সমস্যাটি আছে।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+                    break;
+                case 4:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত হয় নি। কারন এ ধরনের রোগীর ক্ষেত্রে চোখের ভেতরে খচ খচ করে না।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+                    break;
+                case 5:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে চোখে ঝাপসা দেখে এবং আসলেই রোগীর এ সমস্যাটি আছে।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+                    break;
+                case 6:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে বমি বমি ভাব হয় এবং আসলেই রোগীর এ সমস্যাটি আছে।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+                    break;
+            }
+
+            mBuilder.setView(mView);
+            AlertDialog dialog = mBuilder.create();
+            dialog.show();
+
+
+
+          //  Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
+
+            nextCaseQuestion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    StaticLogics.PTquestionNum++;
+                    Intent intent = new Intent(CaseQuestions.this, CaseQuestions.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+            });
 
 
 
@@ -264,7 +310,7 @@ public class CaseQuestions extends AppCompatActivity {
             dialog.show();
 
 
-            Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
 
             nextCaseQuestion.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -280,6 +326,51 @@ public class CaseQuestions extends AppCompatActivity {
 
         else if (StaticLogics.current_PrimaryCaseSolve_LevelRunning==2){
 
+            switch (StaticLogics.PTquestionNum) {
+                case 1:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি না করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে চোখ দিয়ে পূঁজের মত পিচুটি বের হয় না।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+                    break;
+                case 2:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রত কমে আসতে পারে।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+
+                    break;
+                case 3:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন রোগীর ক্ষেত্রে চোখে এবং মাথায় প্রচন্ড ব্যাথা থাকে।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+                    break;
+                case 4:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি না করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে  চোখের ভেতরে খচ খচ করে না।");
+                    StaticLogics.PrimaryCaseSolveScore += 5;
+                    break;
+                case 5:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন এ ধরনের রোগীর ক্ষেত্রে চোখে ঝাপসা দেখে।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+                    break;
+                case 6:
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন এ ধরনের রোগীর ক্ষেত্রে বমি বমি ভাব হয়।");
+                    StaticLogics.PrimaryCaseSolveScore -= 2.5;
+                    break;
+            }
+
+            mBuilder.setView(mView);
+            AlertDialog dialog = mBuilder.create();
+            dialog.show();
+
+
+            //Toast.makeText(this, "Case Solve score of level-" + StaticLogics.current_PrimaryCaseSolve_LevelRunning + " is : " + StaticLogics.PrimaryCaseSolveScore, Toast.LENGTH_SHORT).show();
+
+            nextCaseQuestion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    StaticLogics.PTquestionNum++;
+                    Intent intent = new Intent(CaseQuestions.this, CaseQuestions.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+            });
 
 
 

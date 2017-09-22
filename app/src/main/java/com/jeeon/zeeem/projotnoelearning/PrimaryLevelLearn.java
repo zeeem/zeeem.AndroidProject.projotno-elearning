@@ -44,7 +44,7 @@ public class PrimaryLevelLearn extends AppCompatActivity
         primaryL3 = (Button) findViewById(R.id.primaryLearn3);
         primaryL4 = (Button) findViewById(R.id.primaryLearn4);
 
-        if(StaticLogics.current_PrimaryLearning_LevelRunning==2){
+        if(StaticLogics.unlocked_primary_Learn_level==2){
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_unlocked_btn);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -53,7 +53,7 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
 
         }
-        else if(StaticLogics.current_PrimaryLearning_LevelRunning==3){
+        else if(StaticLogics.unlocked_primary_Learn_level==3){
 
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
@@ -65,7 +65,7 @@ public class PrimaryLevelLearn extends AppCompatActivity
                 primaryL3.setForeground(null);
             }
         }
-        else if(StaticLogics.current_PrimaryLearning_LevelRunning==4){
+        else if(StaticLogics.unlocked_primary_Learn_level==4){
 
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
@@ -107,9 +107,11 @@ public class PrimaryLevelLearn extends AppCompatActivity
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
         StaticLogics.PrimaryLearn1_PostT_score=0;
-        if(StaticLogics.current_PrimaryLearning_LevelRunning<1)
-        StaticLogics.current_PrimaryLearning_LevelRunning = 1;
 
+        if(StaticLogics.unlocked_primary_Learn_level<1)
+        StaticLogics.unlocked_primary_Learn_level = 1;
+
+        StaticLogics.current_PrimaryLearning_LevelRunning = 1;
         Intent intent = new Intent(this, Primary1_PreTest.class);
         startActivity(intent);
         finish();
@@ -117,11 +119,12 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
     public void goToPreTest_PrimaryLearn2(View v){
 
-        if(StaticLogics.current_PrimaryLearning_LevelRunning>1 ) {
+        if(StaticLogics.unlocked_primary_Learn_level>1 ) {
             StaticLogics.PTquestionNum = 1;
             StaticLogics.PrimaryLearn1_PT_score = 0;
             StaticLogics.PrimaryLearn1_PostT_score = 0;
-           // StaticLogics.current_PrimaryLearning_LevelRunning = 2;
+
+           StaticLogics.current_PrimaryLearning_LevelRunning = 2;
 
             Intent intent = new Intent(this, Primary1_PreTest.class);
             startActivity(intent);
@@ -132,11 +135,12 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
     public void goToPreTest_PrimaryLearn3 (View v){
 
-        if(StaticLogics.current_PrimaryLearning_LevelRunning>2 ) {
+        if(StaticLogics.unlocked_primary_Learn_level>2 ) {
             StaticLogics.PTquestionNum = 1;
             StaticLogics.PrimaryLearn1_PT_score = 0;
             StaticLogics.PrimaryLearn1_PostT_score = 0;
-            //StaticLogics.current_PrimaryLearning_LevelRunning = 3;
+
+            StaticLogics.current_PrimaryLearning_LevelRunning = 3;
 
             Intent intent = new Intent(this, Primary1_PreTest.class);
             startActivity(intent);
@@ -213,6 +217,8 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
 
         } else if (id == R.id.nav_primaryL4) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
+
 
         } else if (id == R.id.nav_primaryCS1) {
 
@@ -231,10 +237,13 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
 
         } else if (id == R.id.nav_primaryCS2) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_primaryCS3) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_primaryCS4) {
+            Toast.makeText(this, "Activity locked", Toast.LENGTH_SHORT).show();
 
             //for testing purpose only
 //            StaticLogics.current_PrimaryLearning_LevelRunning=1;

@@ -52,7 +52,10 @@
         <activity android:name=".CaseSymptom" />
         <activity android:name=".CaseInquiryQuestion" />
         <activity android:name=".CaseQuestions" />
-        <activity android:name=".SelectDisease"></activity>
+        <activity android:name=".SelectDisease" />
+        <activity android:name=".SelectTreatment" />
+        <activity android:name=".CaseResult" />
+        <activity android:name=".LastScreen"></activity>
     </application>
 
 </manifest>

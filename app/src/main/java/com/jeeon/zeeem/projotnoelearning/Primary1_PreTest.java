@@ -673,6 +673,7 @@ public class Primary1_PreTest extends AppCompatActivity {
     }
 
 
+    //button activities
     //checking answers depending on the level is going on
     public void goToNextQuestion_PT(View v){
 

@@ -1,6 +1,7 @@
 package com.jeeon.zeeem.projotnoelearning;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,9 @@ public class TestResult extends AppCompatActivity {
         CommentForResult = (TextView) findViewById(R.id.scoreComment);
         goToNextButton = (Button) findViewById(R.id.goToNextStepBtn);
 
+        Typeface tf = Typeface.createFromAsset(getAssets(),
+                "fonts/kalpurush.ttf");
+
         //calculating result
         double score_pretest = (double) StaticLogics.PrimaryLearn1_PT_score;
         Final_PretestResult = score_pretest/25*100;
@@ -50,6 +54,10 @@ public class TestResult extends AppCompatActivity {
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
 
+            //change font to bangla
+            PreTestScore.setTypeface(tf);
+            PostTestScore.setTypeface(tf);
+
             if(StaticLogics.isPostTestCompleted){
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setVisibility(View.GONE);
@@ -66,6 +74,10 @@ public class TestResult extends AppCompatActivity {
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
 
+            //change font to bangla
+            PreTestScore.setTypeface(tf);
+            PostTestScore.setTypeface(tf);
+
             if (StaticLogics.isPostTestCompleted) {
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setVisibility(View.GONE);
@@ -80,6 +92,9 @@ public class TestResult extends AppCompatActivity {
             ResultTitle.setText("গ্লোকুমা টেস্টের ফলাফল");
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
+            //change font to bangla
+            PreTestScore.setTypeface(tf);
+            PostTestScore.setTypeface(tf);
 
             if (StaticLogics.isPostTestCompleted) {
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
@@ -98,8 +113,14 @@ public class TestResult extends AppCompatActivity {
     public void goToNextStep_result(View view){
 
         //making all values default to run run the 2nd level
-        if(StaticLogics.isPostTestCompleted)
-        StaticLogics.current_PrimaryLearning_LevelRunning++; //next level unlocked
+        if(StaticLogics.isPostTestCompleted) {
+            if (StaticLogics.unlocked_primary_Learn_level>StaticLogics.current_PrimaryLearning_LevelRunning){
+                //no new level unlicked
+            }
+        }
+        else {
+            StaticLogics.unlocked_primary_Learn_level++; //next level unlocked
+        }
 
         StaticLogics.isPostTestCompleted = false;
         StaticLogics.isPreTestCompleted = false;

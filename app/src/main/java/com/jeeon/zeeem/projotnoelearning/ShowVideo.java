@@ -22,23 +22,25 @@ public class ShowVideo extends AppCompatActivity {
         setContentView(R.layout.activity_show_video);
         MediaController mediaController;
 
+
+
         Uri uri=null;
         text_showVideo = (TextView) findViewById(R.id.text_showvideo);
         videoFrame_showVideo = (VideoView) findViewById(R.id.videoFrame_showVideo);
 
         //check whether the current level is Primary level 1's preTest 1
         if(StaticLogics.current_PrimaryLearning_LevelRunning==1){
-            text_showVideo.setText("চোখের প্রাথমিক ধারনা সম্পকিত ভিডিওটি দেখুন");
+            text_showVideo.setText("চোখের প্রাথমিক ধারনা সম্পর্কিত ভিডিওটি দেখুন");
            // videoFrame_showVideo.setBackgroundResource(R.drawable.pl_pt_video);
             uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video_eye_anatomy);
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==2){
-            text_showVideo.setText(" কনজান্কটিভাইটিস  সম্পকিত ভিডিওটি দেখুন");
+            text_showVideo.setText(" কনজান্কটিভাইটিস সম্পর্কিত ভিডিওটি দেখুন");
             //videoFrame_showVideo.setBackgroundResource(R.drawable.pl2_pt_video);
             uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video_conjunctivitis);
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==3){
-             text_showVideo.setText("গ্লোকুমা সম্পকিত ভিডিওটি দেখুন");
+             text_showVideo.setText("গ্লোকুমা সম্পর্কিত ভিডিওটি দেখুন");
             // videoFrame_showVideo.setBackgroundResource(R.drawable.pl3_pt_video);
             uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video_glaucoma);
         }
@@ -52,6 +54,8 @@ public class ShowVideo extends AppCompatActivity {
             videoFrame_showVideo.setMediaController(mediaController);
         }
 
+        setTitle("ভিডিওটি দেখুন");
+//      setTitle(text_showVideo.getText());
 
     }
 

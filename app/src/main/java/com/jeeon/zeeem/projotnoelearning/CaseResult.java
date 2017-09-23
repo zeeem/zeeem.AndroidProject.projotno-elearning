@@ -48,13 +48,12 @@ public class CaseResult extends AppCompatActivity {
             scoreComment.setVisibility(View.GONE);
             goToNext_FromCaseSolveResult.setText("পরবতী কেইস-এ যান");
 
-            if(StaticLogics.current_PrimaryCaseSolve_LevelRunning<StaticLogics.unlocked_case_solved_level){
-                //no new unlocking
-            }
-            else {
+            if(StaticLogics.current_PrimaryCaseSolve_LevelRunning==StaticLogics.unlocked_case_solved_level){
+                //new level unlocked
                 StaticLogics.unlocked_case_solved_level++;
                 Toast.makeText(this, "New case unlocked :" + StaticLogics.unlocked_case_solved_level , Toast.LENGTH_SHORT).show();
             }
+
         }
 
     }

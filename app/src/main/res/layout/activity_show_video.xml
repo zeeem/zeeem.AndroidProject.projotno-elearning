@@ -35,11 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="?android:attr/colorEdgeEffect"
+        android:background="?attr/colorPrimary"
         android:onClick="goToPostTest"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="পরবতী প্রশ্নে যান"
+        android:text="পরবর্তী ধাপে যান"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -114,12 +114,11 @@ public class TestResult extends AppCompatActivity {
 
         //making all values default to run run the 2nd level
         if(StaticLogics.isPostTestCompleted) {
-            if (StaticLogics.unlocked_primary_Learn_level>StaticLogics.current_PrimaryLearning_LevelRunning){
-                //no new level unlicked
+            if (StaticLogics.unlocked_primary_Learn_level==StaticLogics.current_PrimaryLearning_LevelRunning){
+                //new level unlocked
+                StaticLogics.unlocked_primary_Learn_level++; //next level unlocked
+                //Toast.makeText(this, "unlocked: "+StaticLogics.unlocked_primary_Learn_level + "...now running" + StaticLogics.current_PrimaryLearning_LevelRunning, Toast.LENGTH_SHORT).show();
             }
-        }
-        else {
-            StaticLogics.unlocked_primary_Learn_level++; //next level unlocked
         }
 
         StaticLogics.isPostTestCompleted = false;
@@ -127,7 +126,7 @@ public class TestResult extends AppCompatActivity {
         StaticLogics.PrimaryLearn1_PT_score = 0;
         StaticLogics.PrimaryLearn1_PostT_score =0;
         StaticLogics.PTquestionNum =1;
-       // Toast.makeText(this, "new level=" + StaticLogics.current_PrimaryLearning_LevelRunning , Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "new level unlocked", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, PrimaryLevelLearn.class);
         startActivity(intent);

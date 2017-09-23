@@ -13,8 +13,11 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="প্রাইমারী ধাপ"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="প্রাইমারী লেভেল"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="25sp"
@@ -62,7 +65,7 @@
                     android:foreground="@drawable/locked"
                     android:foregroundGravity="bottom|right"
                     android:onClick="goToPreTest_PrimaryLearn2"
-                    android:text="লকনজাঙ্কটিভাইটিস/ চোখ ওঠা"
+                    android:text="কনজাঙ্কটিভাইটিস/ চোখ ওঠা"
                     android:textAlignment="center"
                     android:textSize="20sp" />
             </LinearLayout>

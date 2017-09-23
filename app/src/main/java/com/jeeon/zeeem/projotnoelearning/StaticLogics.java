@@ -6,7 +6,7 @@ package com.jeeon.zeeem.projotnoelearning;
 
 public class StaticLogics {
 
-    public static boolean isCaseSolvingUnlocked = true;
+    public static boolean isCaseSolvingUnlocked = false;
     //this should be false as defauult
 
     public static boolean isPrimaryLearn2Unlocked = false;
@@ -15,7 +15,7 @@ public class StaticLogics {
     public static boolean isPrimaryCaseSolve1Unlocked = false; //no need
     public static int current_PrimaryCaseSolve_LevelRunning = 0;
 
-    public static int unlocked_case_solved_level = 2;
+    public static int unlocked_case_solved_level = 0;
     public static int unlocked_primary_Learn_level = 0;
 
 

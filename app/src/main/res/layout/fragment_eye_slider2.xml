@@ -45,7 +45,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="none"
-            android:text="প্রজত্ন ও অরবিসের একটি সমন্বিত প্রচেষ্টা "
+            android:text="প্রযত্ন ও অরবিসের একটি সমন্বিত প্রচেষ্টা "
             android:textSize="15sp"
             android:textStyle="bold" />
 

@@ -39,6 +39,8 @@ public class PrimaryLevelLearn extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+
         primaryL1 = (Button) findViewById(R.id.primaryLearn1);
         primaryL2 = (Button) findViewById(R.id.primaryLearn2);
         primaryL3 = (Button) findViewById(R.id.primaryLearn3);
@@ -89,6 +91,8 @@ public class PrimaryLevelLearn extends AppCompatActivity
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
         StaticLogics.PrimaryLearn1_PostT_score=0;
+        setTitle("প্রাইমারী লেভেল");
+
     }
 
     //making the question count 1

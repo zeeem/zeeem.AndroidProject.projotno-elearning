@@ -810,12 +810,12 @@ public class Primary1_PreTest extends AppCompatActivity {
             startActivity(intent2);
             finish();
 
-            if(!StaticLogics.isPreTestCompleted)
-                Toast.makeText(this, "your PreTest score is : " + StaticLogics.PrimaryLearn1_PT_score + " & " + StaticLogics.PrimaryLearn1_PostT_score,
-                        Toast.LENGTH_SHORT).show();
-            else
-                Toast.makeText(this, "your PostTest score is : " + StaticLogics.PrimaryLearn1_PostT_score + " & " + StaticLogics.PrimaryLearn1_PT_score  ,
-                        Toast.LENGTH_SHORT).show();
+//            if(!StaticLogics.isPreTestCompleted)
+//                Toast.makeText(this, "your PreTest score is : " + StaticLogics.PrimaryLearn1_PT_score + " & " + StaticLogics.PrimaryLearn1_PostT_score,
+//                        Toast.LENGTH_SHORT).show();
+//            else
+//                Toast.makeText(this, "your PostTest score is : " + StaticLogics.PrimaryLearn1_PostT_score + " & " + StaticLogics.PrimaryLearn1_PT_score  ,
+//                        Toast.LENGTH_SHORT).show();
 
         }
         else Toast.makeText(this, "please select an answer",

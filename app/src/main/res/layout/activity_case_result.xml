@@ -76,7 +76,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView6345"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -127,7 +127,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
-        android:background="?android:attr/colorButtonNormal"
+        android:background="?attr/colorButtonNormal"
         android:gravity="center"
         android:padding="4dp"
         android:text="আপনার টেস্ট স্কোর ৮০% এর কম হয়েছে"
@@ -140,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="?android:attr/colorEdgeEffect"
+        android:background="?attr/colorPrimary"
         android:onClick="goToNext_CaseSolve"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"

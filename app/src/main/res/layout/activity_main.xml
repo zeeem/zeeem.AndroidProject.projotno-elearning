@@ -41,7 +41,7 @@
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
             android:paddingTop="15dp"
-            android:text="প্রযত্ন   ই-লার্নিং "
+            android:text="প্রযত্ন ই-লার্নিং "
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"

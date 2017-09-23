@@ -1,6 +1,7 @@
 package com.jeeon.zeeem.projotnoelearning;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -83,16 +84,28 @@ public class EyeSlider extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(timertask, 2000, 2000); //slide animation delay
+        timer.schedule(timertask, 1500, 1500); //slide animation delay
 
     }
 
     //go to nextpage
     public void goToNextPageFUNCITON(){
 
-        Intent intent = new Intent(this, Registration.class);
-        startActivity(intent);
-        finish();
+        //checking if the registration is done
+        SharedPreferences prefs = getSharedPreferences(Registration.PREFS_NAME, 0);
+        boolean isRegistrationDone = prefs.getBoolean("isRegistrationDone", false);
+
+        if(!isRegistrationDone){
+            Intent intent = new Intent(this, Registration.class);
+            startActivity(intent);
+            finish();
+
+        }
+        else {
+            Intent intent = new Intent(this, HomePage.class);
+            startActivity(intent);
+            finish();
+        }
 
     }
 

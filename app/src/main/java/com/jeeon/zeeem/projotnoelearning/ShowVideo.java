@@ -18,7 +18,7 @@ public class ShowVideo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Watch Video");
+
         setContentView(R.layout.activity_show_video);
         MediaController mediaController;
 
@@ -35,7 +35,7 @@ public class ShowVideo extends AppCompatActivity {
             uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video_eye_anatomy);
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==2){
-            text_showVideo.setText(" কনজান্কটিভাইটিস সম্পর্কিত ভিডিওটি দেখুন");
+            text_showVideo.setText("কনজাঙ্কটিভাইটিস সম্পর্কিত ভিডিওটি দেখুন");
             //videoFrame_showVideo.setBackgroundResource(R.drawable.pl2_pt_video);
             uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video_conjunctivitis);
         }

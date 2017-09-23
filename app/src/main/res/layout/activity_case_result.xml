@@ -144,7 +144,7 @@
         android:onClick="goToNext_CaseSolve"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="পরবতী ধাপে যান"
+        android:text="পরবর্তী ধাপে যান"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -32,7 +32,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="পরীক্ষাটি সম্পন্ন করার জন্য আপনাকে থন্যবাদ!"
+        android:text="পরীক্ষাটি সম্পন্ন করার জন্য আপনাকে ধন্যবাদ!"
         android:textColor="@android:color/black"
         android:textSize="19sp" />
 
@@ -174,7 +174,7 @@
         android:onClick="goToNextStep_result"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="পরবতী ধাপে যান"
+        android:text="পরবর্তী ধাপে যান"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

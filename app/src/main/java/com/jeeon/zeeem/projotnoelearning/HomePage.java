@@ -23,6 +23,8 @@ public class HomePage extends AppCompatActivity {
             caseSolveButton.setBackgroundResource(R.drawable.homepage_b1);
         }
 
+        setTitle("হোমপেজ");
+
 
     }
 

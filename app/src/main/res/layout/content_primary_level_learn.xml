@@ -37,37 +37,76 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/primaryLearn1"
+                <FrameLayout
+                    android:id="@+id/primaryLearn1f"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/primary_unlocked_btn"
-                    android:onClick="goToPreTest_PrimaryLearn1"
-                    android:text="চোখের প্রাথমিক ধারণা"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:clickable="true"
+                    android:onClick="goToPreTest_PrimaryLearn1">
 
-                <Button
-                    android:id="@+id/primaryLearn2"
+                    <TextView
+                        android:id="@+id/primaryLearn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_unlocked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="চোখের প্রাথমিক ধারণা"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/primaryLearn2f"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/primary_locked_btn"
-                    android:foreground="@drawable/locked"
-                    android:foregroundGravity="bottom|right"
-                    android:onClick="goToPreTest_PrimaryLearn2"
-                    android:text="কনজাঙ্কটিভাইটিস/ চোখ ওঠা"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:clickable="true"
+                    android:onClick="goToPreTest_PrimaryLearn2">
+
+                    <TextView
+                        android:id="@+id/primaryLearn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_locked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="কনজাঙ্কটিভাইটিস / চোখ ওঠা"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -75,79 +114,151 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/primaryLearn3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/primary_locked_btn"
-                    android:foreground="@drawable/locked"
-                    android:foregroundGravity="bottom|right"
-                    android:onClick="goToPreTest_PrimaryLearn3"
-                    android:text="গ্লুকোমা"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/primaryLearn4"
+                <FrameLayout
+                    android:id="@+id/primaryLearn3f"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/primary_locked_btn"
-                    android:foreground="@drawable/locked"
-                    android:foregroundGravity="bottom|right"
-                    android:onClick="locked_PrimaryLearnLevels"
-                    android:text="ক্যাটারাক্ট / চোখের ছানি"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:clickable="true"
+                    android:onClick="goToPreTest_PrimaryLearn3">
+
+                    <TextView
+                        android:id="@+id/primaryLearn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_locked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="গ্লুকোমা"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/primaryLearn4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="locked_PrimaryLearnLevels">
+
+                    <TextView
+                        android:id="@+id/primaryLearn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_locked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ক্যাটারাক্ট / চোখের ছানি"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="locked_PrimaryLearnLevels"
                 android:orientation="horizontal">
 
-                <Button
+                <FrameLayout
                     android:id="@+id/button7123"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/primary_locked_btn"
-                    android:foreground="@drawable/locked"
-                    android:foregroundGravity="bottom|right"
-                    android:onClick="locked_PrimaryLearnLevels"
-                    android:text="রাতকানা"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:clickable="true"
+                    android:onClick="locked_PrimaryLearnLevels">
 
-                <Button
-                    android:id="@+id/button5123"
+                    <TextView
+                        android:id="@+id/button_tex13t"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_locked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="রাতকানা"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/button51223"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/primary_locked_btn"
-                    android:foreground="@drawable/locked"
-                    android:foregroundGravity="bottom|right"
-                    android:onClick="locked_PrimaryLearnLevels"
-                    android:text="ট্যারা চোখ"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:clickable="true"
+                    android:onClick="locked_PrimaryLearnLevels">
+
+                    <TextView
+                        android:id="@+id/button_tex13t123"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_locked_btn"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ট্যারা চোখ"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/primaryLearn_icon6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/locked" />
+
+                </FrameLayout>
 
             </LinearLayout>
         </LinearLayout>

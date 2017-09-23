@@ -16,12 +16,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PrimaryLevelLearn extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button primaryL1, primaryL2, primaryL3, primaryL4;
+    TextView primaryL1, primaryL2, primaryL3, primaryL4;
+    ImageView lockedIcon1, lockedIcon2, lockedIcon3, lockedIcon4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,17 +46,23 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
 
 
-        primaryL1 = (Button) findViewById(R.id.primaryLearn1);
-        primaryL2 = (Button) findViewById(R.id.primaryLearn2);
-        primaryL3 = (Button) findViewById(R.id.primaryLearn3);
-        primaryL4 = (Button) findViewById(R.id.primaryLearn4);
+        primaryL1 = (TextView) findViewById(R.id.primaryLearn1);
+        primaryL2 = (TextView) findViewById(R.id.primaryLearn2);
+        primaryL3 = (TextView) findViewById(R.id.primaryLearn3);
+        primaryL4 = (TextView) findViewById(R.id.primaryLearn4);
+
+        lockedIcon1 = (ImageView) findViewById(R.id.primaryLearn_icon1);
+        lockedIcon2 = (ImageView) findViewById(R.id.primaryLearn_icon2);
+        lockedIcon3 = (ImageView) findViewById(R.id.primaryLearn_icon3);
+        lockedIcon4 = (ImageView) findViewById(R.id.primaryLearn_icon4);
 
         if(StaticLogics.unlocked_primary_Learn_level==2){
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_unlocked_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL2.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL2.setForeground(null);
+//            }
+            lockedIcon2.setVisibility(View.GONE);
 
 
         }
@@ -59,29 +70,34 @@ public class PrimaryLevelLearn extends AppCompatActivity
 
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL2.setForeground(null);
-            }
+            lockedIcon2.setVisibility(View.GONE);
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL2.setForeground(null);
+//            }
             primaryL3.setBackgroundResource(R.drawable.primary_unlocked_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL3.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL3.setForeground(null);
+//            }
+            lockedIcon3.setVisibility(View.GONE);
         }
         else if(StaticLogics.unlocked_primary_Learn_level==4){
 
             primaryL1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryL2.setBackgroundResource(R.drawable.primary_completed_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL2.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL2.setForeground(null);
+//            }
+            lockedIcon2.setVisibility(View.GONE);
             primaryL3.setBackgroundResource(R.drawable.primary_completed_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL3.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL3.setForeground(null);
+//            }
+            lockedIcon3.setVisibility(View.GONE);
             primaryL4.setBackgroundResource(R.drawable.primary_unlocked_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryL4.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryL4.setForeground(null);
+//            }
+            lockedIcon4.setVisibility(View.GONE);
 
             Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
             StaticLogics.isCaseSolvingUnlocked = true;
@@ -102,6 +118,7 @@ public class PrimaryLevelLearn extends AppCompatActivity
         StaticLogics.PTquestionNum=1;
         StaticLogics.PrimaryLearn1_PT_score=0;
         StaticLogics.PrimaryLearn1_PostT_score=0;
+
     }
 
     //go to pre test

@@ -41,6 +41,7 @@
         app:srcCompat="@drawable/pl_pt1" />
 
     <RadioGroup
+        android:id="@+id/ans_RadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -91,7 +92,6 @@
             android:layout_weight="1"
             android:text="ঘ. পিউপিল "
             android:textSize="16sp" />
-
     </RadioGroup>
 
     <Button
@@ -104,7 +104,7 @@
         android:onClick="goToNextQuestion_PT"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="পরবতী প্রশ্নে যান"
+        android:text="পরবর্তী প্রশ্নে যান"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

@@ -15,12 +15,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PrimaryLevelCsaeSolve extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button primaryCS1, primaryCS2, primaryCS3, primaryCS4;
+    TextView primaryCS1, primaryCS2, primaryCS3, primaryCS4;
+    ImageView lockedIcon1, lockedIcon2, lockedIcon3, lockedIcon4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,29 +45,38 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        primaryCS1 = (Button) findViewById(R.id.primaryCase1);
-        primaryCS2 = (Button) findViewById(R.id.primaryCase2);
-        primaryCS3 = (Button) findViewById(R.id.primaryCase3);
-        primaryCS4 = (Button) findViewById(R.id.primaryCase4);
+        primaryCS1 = (TextView) findViewById(R.id.primaryCase1);
+        primaryCS2 = (TextView) findViewById(R.id.primaryCase2);
+        primaryCS3 = (TextView) findViewById(R.id.primaryCase3);
+        primaryCS4 = (TextView) findViewById(R.id.primaryCase4);
+
+        lockedIcon1 = (ImageView) findViewById(R.id.primaryCase_icon1);
+        lockedIcon2 = (ImageView) findViewById(R.id.primaryCase_icon2);
+        lockedIcon3 = (ImageView) findViewById(R.id.primaryCase_icon3);
+        lockedIcon4 = (ImageView) findViewById(R.id.primaryCase_icon4);
 
         if(StaticLogics.unlocked_case_solved_level>1){
             primaryCS1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryCS2.setBackgroundResource(R.drawable.primary_unlocked_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryCS2.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryCS2.setForeground(null);
+//            }
+            lockedIcon2.setVisibility(View.GONE);
         }
         else if(StaticLogics.unlocked_case_solved_level>2){
 
             primaryCS1.setBackgroundResource(R.drawable.primary_completed_btn);
             primaryCS2.setBackgroundResource(R.drawable.primary_completed_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryCS2.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryCS2.setForeground(null);
+//            }
+            lockedIcon2.setVisibility(View.GONE);
+
             primaryCS3.setBackgroundResource(R.drawable.primary_unlocked_btn);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                primaryCS3.setForeground(null);
-            }
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                primaryCS3.setForeground(null);
+//            }
+            lockedIcon3.setVisibility(View.GONE);
         }
 
         StaticLogics.PrimaryCaseSolveScore=0;

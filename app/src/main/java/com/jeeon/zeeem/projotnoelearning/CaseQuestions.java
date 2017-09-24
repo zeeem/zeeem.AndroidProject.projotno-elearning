@@ -24,6 +24,18 @@ public class CaseQuestions extends AppCompatActivity {
 
         setTitle("কেস সমাধান");
 
+        //go to next page if all ques are answered
+        if(StaticLogics.tempQues_2 == StaticLogics.PTquestionNum){
+
+            StaticLogics.tempQues_1 =0;
+            StaticLogics.tempQues_2 =0;
+            StaticLogics.PTquestionNum = 1;
+
+            Intent i = new Intent(this, SelectDisease.class);
+            startActivity(i);
+            finish();
+        }
+
         imageCaseQuestion = (ImageView) findViewById(R.id.imageCaseQuestion);
         textCaseQuestion = (TextView) findViewById(R.id.textCaseQuestion);
 
@@ -65,15 +77,28 @@ public class CaseQuestions extends AppCompatActivity {
                     textCaseQuestion.setText("সম্প্রতি চোখ উঠেছে এ রকম কারো সংগে ছেলেটি মেলামেশা করেছে কিনা এটি জিজ্ঞেস করবেন কি?");
                     imageCaseQuestion.setImageResource(R.drawable.p_case1_q6);
 
-
                     break;
 
                 case 7:
-                    StaticLogics.PTquestionNum = 1;
-                    //StaticLogics.isPreTestCompleted = true;
-                    Intent i = new Intent(this, SelectDisease.class);
-                    startActivity(i);
-                    finish();
+
+                    if(StaticLogics.tempQues_1==1){
+
+                        StaticLogics.PTquestionNum = 1;
+                        //StaticLogics.isPreTestCompleted = true;
+                        Intent i = new Intent(this, SelectDisease.class);
+                        startActivity(i);
+                        finish();
+
+                    }
+                    else {
+                        StaticLogics.PTquestionNum = 1;
+                        StaticLogics.tempQues_2 = StaticLogics.tempQues_1;
+
+                        Intent intent = new Intent(CaseQuestions.this, CaseQuestions.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
 
                     break;
 
@@ -131,11 +156,24 @@ public class CaseQuestions extends AppCompatActivity {
                     break;
 
                 case 7:
-                    StaticLogics.PTquestionNum = 1;
-                    //StaticLogics.isPreTestCompleted = true;
-                    Intent i = new Intent(this, SelectDisease.class);
-                    startActivity(i);
-                    finish();
+
+                    if(StaticLogics.tempQues_1==1){
+
+                        StaticLogics.PTquestionNum = 1;
+                        //StaticLogics.isPreTestCompleted = true;
+                        Intent i = new Intent(this, SelectDisease.class);
+                        startActivity(i);
+                        finish();
+
+                    }
+                    else {
+                        StaticLogics.PTquestionNum = 1;
+                        StaticLogics.tempQues_2 = StaticLogics.tempQues_1;
+
+                        Intent intent = new Intent(CaseQuestions.this, CaseQuestions.class);
+                        startActivity(intent);
+                        finish();
+                    }
 
                     break;
 

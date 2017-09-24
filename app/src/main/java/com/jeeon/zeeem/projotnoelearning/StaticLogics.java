@@ -40,13 +40,7 @@ public class StaticLogics {
     public static boolean mul_treatment_Ans_count_2 = false;
 
 
-
-
-
-//    public static void saveBackgroundData(){
-//
-//        MainActivity mainActivity = new MainActivity();
-//        mainActivity.saveData();
-//
-//    }
+    //for case inquery quesiton selection (random) by user
+    public static int tempQues_1=0;
+    public static int tempQues_2=0;
 }

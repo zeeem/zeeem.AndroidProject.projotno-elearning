@@ -54,5 +54,64 @@ public class CaseInquiryQuestion extends AppCompatActivity {
 
     }
 
+    public void goToNextFromQ1(View view){
+
+        StaticLogics.tempQues_1 = 1;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void goToNextFromQ2(View view){
+
+        StaticLogics.tempQues_1 = 2;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void goToNextFromQ3(View view){
+
+        StaticLogics.tempQues_1 = 3;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void goToNextFromQ4(View view){
+
+        StaticLogics.tempQues_1 = 4;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void goToNextFromQ5(View view){
+
+        StaticLogics.tempQues_1 = 5;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void goToNextFromQ6(View view){
+
+        StaticLogics.tempQues_1 = 6;
+        StaticLogics.PTquestionNum= StaticLogics.tempQues_1;
+        Intent intent = new Intent(this, CaseQuestions.class);
+        startActivity(intent);
+        finish();
+
+    }
 
 }

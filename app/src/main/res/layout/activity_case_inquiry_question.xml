@@ -80,8 +80,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/case_inquiry_btn_yellow"
-                android:onClick="goToNextCaseStep"
+                android:background="@drawable/case_inquiry_btn_white"
+                android:onClick="goToNextFromQ1"
                 android:text="১। চোখ দিয়ে পানি ঝরছে কিনা এটি জিজ্ঞেস করবেন কি ? "
                 android:textSize="15sp" />
 
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/case_inquiry_btn_white"
-                android:onClick="lockedCaseLevels"
+                android:onClick="goToNextFromQ2"
                 android:text="২। চোখের দৃষ্টি শক্তি হঠাৎ করে কমে গেছে কিনা এটি জিজ্ঞেস করবেন কি?"
                 android:textSize="15sp" />
 
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/case_inquiry_btn_white"
-                android:onClick="lockedCaseLevels"
+                android:onClick="goToNextFromQ3"
                 android:text="৩।চোখের ভেতরে কি খচ খচ করছে এটি জিজ্ঞেস করবেন কি? "
                 android:textSize="15sp" />
 
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/case_inquiry_btn_white"
-                android:onClick="lockedCaseLevels"
+                android:onClick="goToNextFromQ4"
                 android:text="৪। সকালে পিচুটি জমে চোখের পাতা আটকে থাকে এটি জিজ্ঞেস করবেন কি?"
                 android:textSize="15sp" />
 
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/case_inquiry_btn_white"
-                android:onClick="lockedCaseLevels"
+                android:onClick="goToNextFromQ5"
                 android:text="৫। চোখে হঠাৎ করে প্রচন্ড ব্যথা শুরু হয়েছে এটি জিজ্ঞেস করবেন কি?"
                 android:textSize="15sp" />
 
@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/case_inquiry_btn_white"
-                android:onClick="lockedCaseLevels"
+                android:onClick="goToNextFromQ6"
                 android:text="৬।সম্প্রতি চোখ উঠেছে এ রকম কারো সংগে ছেলেটি মেলামেশা করেছে কিনা এটি জিজ্ঞেস করবেন কি? "
                 android:textSize="15sp" />
         </LinearLayout>

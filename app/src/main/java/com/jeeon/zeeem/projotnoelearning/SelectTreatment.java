@@ -23,6 +23,8 @@ public class SelectTreatment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_treatment);
 
+        setTitle("কেস সমাধান");
+
         treatmentText = (TextView) findViewById(R.id.treatmentText);
 
         b1 = (Button) findViewById(R.id.treatmentBtn1);
@@ -58,7 +60,7 @@ public class SelectTreatment extends AppCompatActivity {
 
             treatmentText.setText("নিস্নে গ্লোকোমা এর জন্য সম্ভাব্য কয়েকটি চিকিৎসা উল্লেখ করা হয়েছে। আপনি উপযুক্ত চিকিৎসা/গুলো নিবাচন করুন");
 
-            b1.setText("এন্টিব্যায়োটিক আই ড্রপ");
+            b1.setText("অ্যান্টিবায়োটিক আই ড্রপ");
             b2.setText("স্টেরয়েড আই ড্রপ");
             b3.setText("রেফার করে দিন");
             b4.setText("হোম এ্যাডভাইস");
@@ -124,7 +126,7 @@ public class SelectTreatment extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.VISIBLE);
             correctAns_disease.setVisibility(View.GONE);
 
-            diseaseAnsDetails.setText("কারন এন্টিব্যায়োটিক আই ড্রপ এক্ষেত্রে ব্যবহার করা হয় না।");
+            diseaseAnsDetails.setText("কারন অ্যান্টিবায়োটিক আই ড্রপ এক্ষেত্রে ব্যবহার করা হয় না।");
             nextDiseaseSelectStep.setText("দয়া করে আবার চেষ্টা করুন");
 
             mBuilder.setView(mView);
@@ -171,7 +173,7 @@ public class SelectTreatment extends AppCompatActivity {
             correctAns_disease.setVisibility(View.VISIBLE);
 
             diseaseAnsDetails.setText("কারন ক্লোরামফেনিকল ০.৫% আই ড্রপ এই রোগের জন্য প্রথম চিকিৎসা।");
-            nextDiseaseSelectStep.setText("পরবতী ধাপে যান");
+            nextDiseaseSelectStep.setText("পরবর্তী ধাপে যান");
 
             mBuilder.setView(mView);
             AlertDialog dialog = mBuilder.create();
@@ -303,7 +305,7 @@ public class SelectTreatment extends AppCompatActivity {
             correctAns_disease.setVisibility(View.VISIBLE);
 
             diseaseAnsDetails.setText("কারন এক্ষেত্রে একজন চক্ষু বিশেষজ্ঞের সরনাপন্ন হওয়া অতীব জরুরী।");
-            nextDiseaseSelectStep.setText("পরবতী ধাপে যান");
+            nextDiseaseSelectStep.setText("পরবর্তী ধাপে যান");
 
             mBuilder.setView(mView);
             AlertDialog dialog = mBuilder.create();
@@ -352,7 +354,7 @@ public class SelectTreatment extends AppCompatActivity {
                 correctAns_disease.setVisibility(View.VISIBLE);
 
                 diseaseAnsDetails.setText("কারন এক্ষেত্রে চোখে নরম কাপড় দিয়ে মৃদু গরম সেক দিলে আরাম পাওয়া যায়। ");
-                nextDiseaseSelectStep.setText("পরবতী ধাপে যান");
+                nextDiseaseSelectStep.setText("পরবর্তী ধাপে যান");
 
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
@@ -441,7 +443,7 @@ public class SelectTreatment extends AppCompatActivity {
         correctAns_disease.setText("আপনার আরও সঠিক উত্তর রয়েছে। চুড়ান্ত ফলাফলের জন্য সঠিক উত্তর/গুলো নিবাচন করুন।");
 
         diseaseAnsDetails.setVisibility(View.GONE);
-        nextDiseaseSelectStep.setText(" পরবতী ধাপে যান");
+        nextDiseaseSelectStep.setText(" পরবর্তী ধাপে যান");
 
         mBuilder.setView(mView);
         AlertDialog dialog = mBuilder.create();

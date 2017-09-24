@@ -22,11 +22,10 @@ public class CaseQuestions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_case_questions);
 
+        setTitle("কেস সমাধান");
+
         imageCaseQuestion = (ImageView) findViewById(R.id.imageCaseQuestion);
         textCaseQuestion = (TextView) findViewById(R.id.textCaseQuestion);
-
-
-
 
         //populating questions
         if(StaticLogics.current_PrimaryCaseSolve_LevelRunning==1) {
@@ -51,13 +50,13 @@ public class CaseQuestions extends AppCompatActivity {
 
                 case 4:
                     textCaseQuestion.setText("সকালে পিচুটি জমে চোখের পাতা আটকে থাকে কিনা এটি জিজ্ঞেস করবেন কি?");
-                    imageCaseQuestion.setImageResource(R.drawable.p_case1_q4);
+                    imageCaseQuestion.setImageResource(R.drawable.p_case1_q5);
 
                     break;
 
                 case 5:
                     textCaseQuestion.setText("চোখে হঠাৎ করে প্রচন্ড ব্যথা শুরু হয়েছে কিনা এটি জিজ্ঞেস করবেন কি?");
-                    imageCaseQuestion.setImageResource(R.drawable.p_case1_q5);
+                    imageCaseQuestion.setImageResource(R.drawable.p_case1_q4);
 
                     break;
 
@@ -100,7 +99,7 @@ public class CaseQuestions extends AppCompatActivity {
                     break;
 
                 case 2:
-                    textCaseQuestion.setText("২। দৃষ্টি শক্তি দ্রত কমে আসছে কিনা এটি জিজ্ঞেস করবেন কি?");
+                    textCaseQuestion.setText("২। দৃষ্টি শক্তি দ্রুত কমে আসছে কিনা এটি জিজ্ঞেস করবেন কি?");
                     imageCaseQuestion.setImageResource(R.drawable.p_case2_q2);
 
                     break;
@@ -150,9 +149,9 @@ public class CaseQuestions extends AppCompatActivity {
                     break;
             }
 
-
-
         }
+
+        setTitle("কেস সমাধান");
     }
 
 
@@ -222,7 +221,7 @@ public class CaseQuestions extends AppCompatActivity {
                     StaticLogics.PrimaryCaseSolveScore -= 2.5;
                     break;
                 case 2:
-                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রত কমে আসতে পারে এবং আসলেই রোগীর এ সমস্যাটি আছে।");
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা ঠিক হয়েছে। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রুত কমে আসতে পারে এবং আসলেই রোগীর এ সমস্যাটি আছে।");
                     StaticLogics.PrimaryCaseSolveScore += 5;
 
                     break;
@@ -332,7 +331,7 @@ public class CaseQuestions extends AppCompatActivity {
                     StaticLogics.PrimaryCaseSolveScore += 5;
                     break;
                 case 2:
-                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রত কমে আসতে পারে।");
+                    case_dialog_test.setText("এই ক্ষেত্রে এই প্রশ্নটি করা উচিত ছিল। কারন এ ধরনের রোগীর ক্ষেত্রে দৃষ্টি শক্তি দ্রুত কমে আসতে পারে।");
                     StaticLogics.PrimaryCaseSolveScore -= 2.5;
 
                     break;

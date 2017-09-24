@@ -77,9 +77,9 @@ public class Primary1_PreTest extends AppCompatActivity {
                 //setting PT quesitons (primary learn 1)
                 switch (StaticLogics.PTquestionNum) {
                     case 1:
-                        PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+                        PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
 //                PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-১: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-১: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt1);
 
@@ -92,9 +92,9 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-২: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-২: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt2);
 
@@ -106,9 +106,9 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৩: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৩: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt3);
 
@@ -121,9 +121,9 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৪: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৪: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt4);
 
@@ -135,9 +135,9 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৫: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৫: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt5);
 
@@ -145,6 +145,8 @@ public class Primary1_PreTest extends AppCompatActivity {
                         ans2.setText("লেন্স");
                         ans3.setText("করোয়েড");
                         ans4.setText("কনজাঙ্কটিভাইটিস");
+
+                        nextQuesButton_PT.setText("পরবর্তী ধাপে যান");
 
 
                         break;
@@ -176,7 +178,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                     case 1:
                         PT_introText.setText("নিম্নের প্রশ্নগুলোর উত্তর দিয়ে নিজেকে যাচাই করুন");
 //                PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-১: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-১: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt1);
 
@@ -189,9 +191,9 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-২: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-২: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt2);
 
@@ -203,9 +205,9 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৩: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৩: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt3);
 
@@ -218,9 +220,9 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৪: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৪: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt4);
 
@@ -232,9 +234,9 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
-                        PTquestion.setText("প্র-৫: নিচের তির চিহ্নিত অংশটির নাম কি?");
+                        PTquestion.setText("প্র-৫: নিচের তীর চিহ্নিত অংশটির নাম কি?");
 
                         PTquestionImage.setImageResource(R.drawable.pl_pt5);
 
@@ -279,7 +281,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                 //setting PT quesitons (primary learn 2)
                 switch (StaticLogics.PTquestionNum) {
                     case 1:
-                        PT_introText.setText("কনজাঙ্কটিভাইটিস সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+                        PT_introText.setText("কনজাঙ্কটিভাইটিস সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
 //                PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-১: নিচের কোনটি চোখ উঠার লক্ষণ না?");
 
@@ -295,7 +297,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-২: নিম্নলিখিত কোন কারনে কনজাঙ্কটিভাইটিস হয় না?");
 
@@ -310,7 +312,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৩: নিম্নলিখিত কোন কারনে কনজাঙ্কটিভাইটিস ছড়াতে পারে?");
 
@@ -326,7 +328,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৪: নিম্নলিখিত কোন উপায়ে কনজাঙ্কটিভাইটিস রোগের চিকিৎসা করা হয়?");
 
@@ -341,7 +343,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৫: সঠিক উত্তরটি চিহ্নিত করুন -");
 
@@ -353,6 +355,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         ans3.setText("মায়ের হেপাটাইটিস বি  থাকলে শিশু জন্মের সময় কনজাঙ্কটিভাইটিস-এ আক্রান্ত হতে পারে");
                         ans4.setText("কনজাঙ্কটিভাইটিস-এর প্রতিশোধক হিসাবে টিকা দেয় যেতে পারে");
 
+                        nextQuesButton_PT.setText("পরবর্তী ধাপে যান");
 
                         break;
 
@@ -397,7 +400,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-২: নিম্নলিখিত কোন কারনে কনজাঙ্কটিভাইটিস হয় না?");
 
@@ -412,7 +415,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৩: নিম্নলিখিত কোন কারনে কনজাঙ্কটিভাইটিস ছড়াতে পারে?");
 
@@ -428,7 +431,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৪: নিম্নলিখিত কোন উপায়ে কনজাঙ্কটিভাইটিস রোগের চিকিৎসা করা হয়?");
 
@@ -443,7 +446,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৫: সঠিক উত্তরটি চিহ্নিত করুন -");
 
@@ -492,7 +495,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                 //setting PT quesitons (primary learn 3)
                 switch (StaticLogics.PTquestionNum) {
                     case 1:
-                        PT_introText.setText("গ্লোকুমা সম্পকিত নিম্নের প্রশ্নগুলোর উত্তর দিন");
+                        PT_introText.setText("গ্লোকুমা সম্পর্কিত নিম্নের প্রশ্নগুলোর উত্তর দিন");
 //                PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-১: নিম্নলিখিত কারণে গ্লোকুমা রোগ সৃষ্টি হয় ?");
 
@@ -508,7 +511,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-২: ভুল উত্তরটি চিহ্নিত করুন: গ্লোকুমা হলে …..?");
 
@@ -523,7 +526,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৩: সঠিক উত্তরটি চিহ্নিত করুন");
 
@@ -539,7 +542,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৪: ভুল উত্তরটি চিহ্নিত করুন: গ্লোকুমার ঝুঁকি যুক্ত কারণ");
 
@@ -554,7 +557,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৫: সঠিক উত্তরটি চিহ্নিত করুন: গ্লোকুমা রোগ যে ভাবে ছড়ায়:");
 
@@ -566,6 +569,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         ans3.setText("সময় মত চিকিৎসা না করলে");
                         ans4.setText("উপরের কোনটাই ঠিক নয়");
 
+                        nextQuesButton_PT.setText("পরবর্তী ধাপে যান");
 
                         break;
 
@@ -594,7 +598,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                 switch (StaticLogics.PTquestionNum) {
                     case 1:
-                        PT_introText.setText("গ্লোকুমা সম্পকিত নিম্নের প্রশ্নগুলোর উত্তর দিন");
+                        PT_introText.setText("গ্লোকুমা সম্পর্কিত নিম্নের প্রশ্নগুলোর উত্তর দিন");
 //                PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-১: নিম্নলিখিত কারণে গ্লোকুমা রোগ সৃষ্টি হয় ?");
 
@@ -610,7 +614,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 2:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-২: ভুল উত্তরটি চিহ্নিত করুন: গ্লোকুমা হলে …..?");
 
@@ -625,7 +629,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 3:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৩: সঠিক উত্তরটি চিহ্নিত করুন");
 
@@ -641,7 +645,7 @@ public class Primary1_PreTest extends AppCompatActivity {
 
                     case 4:
 
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৪: ভুল উত্তরটি চিহ্নিত করুন: গ্লোকুমার ঝুঁকি যুক্ত কারণ");
 
@@ -656,7 +660,7 @@ public class Primary1_PreTest extends AppCompatActivity {
                         break;
 
                     case 5:
-//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
+//                PT_introText.setText("চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন");
                         PT_introText.setVisibility(View.GONE);
                         PTquestion.setText("প্র-৫: সঠিক উত্তরটি চিহ্নিত করুন: গ্লোকুমা রোগ যে ভাবে ছড়ায়:");
 

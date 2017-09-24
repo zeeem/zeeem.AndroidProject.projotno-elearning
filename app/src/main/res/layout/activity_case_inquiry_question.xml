@@ -31,7 +31,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="রোগের উপসগ ও লক্ষণ নিণয় "
+        android:text="রোগের উপসর্গ ও লক্ষণ নির্ণয় "
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -45,7 +45,7 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:padding="8dp"
-        android:text="রোগীর রোগটি সঠিকভাবে নিণয় করার জন্য নিম্নের কোন লক্ষনগুলো রোগীর কাছ থেকে জানতে হবে?"
+        android:text="রোগীর রোগটি সঠিকভাবে নির্ণয় করার জন্য নিম্নের কোন লক্ষনগুলো রোগীর কাছ থেকে জানতে হবে?"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 

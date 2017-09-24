@@ -26,6 +26,8 @@ public class TestResult extends AppCompatActivity {
         // Toast.makeText(this, "POST state=" + StaticLogics.isPostTestCompleted, Toast.LENGTH_SHORT).show();
         StaticLogics.isPostTestCompleted=false;
 
+        setTitle("ফলাফল");
+
         ResultTitle = (TextView) findViewById(R.id.resultTitle);
         PreTestScore = (TextView) findViewById(R.id.result_preTest);
         PostTestScore = (TextView) findViewById(R.id.result_PostTest);
@@ -51,6 +53,7 @@ public class TestResult extends AppCompatActivity {
 
         if(StaticLogics.current_PrimaryLearning_LevelRunning==1){
             ResultTitle.setText("চোখের প্রাথমিক ধারনা ফলাফল");
+            setTitle("চোখের প্রাথমিক ধারনা ফলাফল");
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
 
@@ -61,7 +64,7 @@ public class TestResult extends AppCompatActivity {
             if(StaticLogics.isPostTestCompleted){
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setVisibility(View.GONE);
-                goToNextButton.setText("পরবতী ধাপে যান");
+                goToNextButton.setText("পরবর্তী ধাপে যান");
             }
             else {
                 // Toast.makeText(this, "POST false - found", Toast.LENGTH_SHORT).show();
@@ -71,6 +74,7 @@ public class TestResult extends AppCompatActivity {
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==2) {
             ResultTitle.setText("কনজাঙ্কটিভাইটিস টেস্টের ফলাফল");
+            setTitle("কনজাঙ্কটিভাইটিস টেস্টের ফলাফল");
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
 
@@ -81,7 +85,7 @@ public class TestResult extends AppCompatActivity {
             if (StaticLogics.isPostTestCompleted) {
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setVisibility(View.GONE);
-                goToNextButton.setText("পরবতী ধাপে যান");
+                goToNextButton.setText("পরবর্তী ধাপে যান");
             } else {
                 // Toast.makeText(this, "POST false - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setText("আপনার পোস্ট-টেস্ট স্কোর ৮০% এর কম হয়েছে");
@@ -90,6 +94,7 @@ public class TestResult extends AppCompatActivity {
         }
         else if(StaticLogics.current_PrimaryLearning_LevelRunning==3) {
             ResultTitle.setText("গ্লোকুমা টেস্টের ফলাফল");
+            setTitle("গ্লোকুমা টেস্টের ফলাফল");
             PreTestScore.setText(Double.toString(Final_PretestResult));
             PostTestScore.setText(Double.toString(Final_PostTestResult));
             //change font to bangla
@@ -99,11 +104,29 @@ public class TestResult extends AppCompatActivity {
             if (StaticLogics.isPostTestCompleted) {
                 //Toast.makeText(this, "POST true - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setVisibility(View.GONE);
-                goToNextButton.setText("পরবতী ধাপে যান");
+                goToNextButton.setText("পরবর্তী ধাপে যান");
             } else {
                 // Toast.makeText(this, "POST false - found", Toast.LENGTH_SHORT).show();
                 CommentForResult.setText("আপনার পোস্ট-টেস্ট স্কোর ৮০% এর কম হয়েছে");
                 goToNextButton.setText("আবার চেষ্টা করুন!");
+            }
+        }
+
+        //making all values default to run run the 2nd level
+        if(StaticLogics.isPostTestCompleted) {
+            if (StaticLogics.unlocked_primary_Learn_level==StaticLogics.current_PrimaryLearning_LevelRunning){
+                //new level unlocked
+                StaticLogics.unlocked_primary_Learn_level++; //next level unlocked
+
+                if(StaticLogics.unlocked_primary_Learn_level>3){
+                    StaticLogics.isCaseSolvingUnlocked=true;
+                }
+
+                //save the data in database
+                MainActivity mainActivity = new MainActivity();
+                mainActivity.saveData(getApplicationContext());
+
+                //Toast.makeText(this, "unlocked: "+StaticLogics.unlocked_primary_Learn_level + "...now running" + StaticLogics.current_PrimaryLearning_LevelRunning, Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -112,14 +135,7 @@ public class TestResult extends AppCompatActivity {
     //resultPage's GOTO Button Activity
     public void goToNextStep_result(View view){
 
-        //making all values default to run run the 2nd level
-        if(StaticLogics.isPostTestCompleted) {
-            if (StaticLogics.unlocked_primary_Learn_level==StaticLogics.current_PrimaryLearning_LevelRunning){
-                //new level unlocked
-                StaticLogics.unlocked_primary_Learn_level++; //next level unlocked
-                //Toast.makeText(this, "unlocked: "+StaticLogics.unlocked_primary_Learn_level + "...now running" + StaticLogics.current_PrimaryLearning_LevelRunning, Toast.LENGTH_SHORT).show();
-            }
-        }
+
 
         StaticLogics.isPostTestCompleted = false;
         StaticLogics.isPreTestCompleted = false;
@@ -128,8 +144,17 @@ public class TestResult extends AppCompatActivity {
         StaticLogics.PTquestionNum =1;
         Toast.makeText(this, "new level unlocked", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this, PrimaryLevelLearn.class);
-        startActivity(intent);
+        if(StaticLogics.unlocked_primary_Learn_level>3){
+            StaticLogics.isCaseSolvingUnlocked=true;
+            Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, PrimaryLevelCsaeSolve.class);
+            startActivity(intent);
+
+        }
+        else {
+            Intent intent = new Intent(this, PrimaryLevelLearn.class);
+            startActivity(intent);
+        }
         finish();
 
     }

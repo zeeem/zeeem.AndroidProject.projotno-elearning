@@ -28,7 +28,7 @@
         android:background="?attr/colorPrimary"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="পরবতী প্রশ্নে যান"
+        android:text="পরবর্তী প্রশ্নে যান"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />

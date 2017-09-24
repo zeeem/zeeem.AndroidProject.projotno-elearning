@@ -17,6 +17,8 @@ public class CaseInquiryQuestion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_case_inquiry_question);
 
+        setTitle("কেস সমাধান");
+
         case_q1 = (Button) findViewById(R.id.case_q1);
         case_q2 = (Button) findViewById(R.id.case_q2);
         case_q3 = (Button) findViewById(R.id.case_q3);
@@ -27,7 +29,7 @@ public class CaseInquiryQuestion extends AppCompatActivity {
         if(StaticLogics.current_PrimaryCaseSolve_LevelRunning==2){
 
             case_q1.setText("১। চোখ দিয়ে কি পূঁজের মত পিচুটি বের হচ্ছে কিনা এটি জিজ্ঞেস করবেন কি?");
-            case_q2.setText("২। দৃষ্টি শক্তি দ্রত কমে আসছে কিনা এটি জিজ্ঞেস করবেন কি?");
+            case_q2.setText("২। দৃষ্টি শক্তি দ্রুত কমে আসছে কিনা এটি জিজ্ঞেস করবেন কি?");
             case_q3.setText("৩। চোখে এবং মাথায় প্রচন্ড ব্যাথা আছে কিনা এটি জিজ্ঞেস করবেন কি?");
             case_q4.setText("৪। চোখের ভেতরে খচ খচ করে কিনা এটি জিজ্ঞেস করবেন কি?");
             case_q5.setText("৫। চোখে ঝাপসা দেখে কিনা এটি জিজ্ঞেস করবেন কিনা?");

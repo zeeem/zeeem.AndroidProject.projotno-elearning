@@ -18,7 +18,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="প্র-১: নিচের তির চিহ্নিত অংশটির নাম কি? "
+        android:text="প্র-১: নিচের তীর চিহ্নিত অংশটির নাম কি? "
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 

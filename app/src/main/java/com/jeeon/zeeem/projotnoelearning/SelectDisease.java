@@ -19,6 +19,8 @@ public class SelectDisease extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_disease);
 
+        setTitle("কেস সমাধান");
+
         buttonLayoutToShuffle = (LinearLayout) findViewById(R.id.buttonLayoutToShuffle);
 
         //for shuffling answers
@@ -63,7 +65,7 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.VISIBLE);
             correctAns_disease.setVisibility(View.GONE);
 
-            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা ক্যাটারাক্ট এর সাথে সম্পকিত নয়।");
+            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা ক্যাটারাক্ট এর সাথে সম্পর্কিত নয়।");
             nextDiseaseSelectStep.setText("দয়া করে আবার চেষ্টা করুন");
 
             mBuilder.setView(mView);
@@ -100,7 +102,7 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.VISIBLE);
             correctAns_disease.setVisibility(View.GONE);
 
-            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা ক্যাটারাক্ট এর সাথে সম্পকিত নয়।");
+            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা ক্যাটারাক্ট এর সাথে সম্পর্কিত নয়।");
             nextDiseaseSelectStep.setText("দয়া করে আবার চেষ্টা করুন");
 
             mBuilder.setView(mView);
@@ -144,7 +146,7 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.VISIBLE);
             correctAns_disease.setVisibility(View.GONE);
 
-            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা গ্লুকোমার সাথে সম্পকিত নয়।");
+            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা গ্লুকোমার সাথে সম্পর্কিত নয়।");
             nextDiseaseSelectStep.setText("দয়া করে আবার চেষ্টা করুন");
 
             mBuilder.setView(mView);
@@ -182,8 +184,8 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.GONE);
             correctAns_disease.setVisibility(View.VISIBLE);
 
-            diseaseAnsDetails.setText("কারন আপনি যে লক্ষনগুলো নিবাচন করেছেন তা গ্লুকোমা এর সাথে সম্পকিত।");
-            nextDiseaseSelectStep.setText("চিকিৎসা দেয়ার জন্য পরবতী ধাপে যান");
+            diseaseAnsDetails.setText("কারন আপনি যে লক্ষনগুলো নিবাচন করেছেন তা গ্লুকোমা এর সাথে সম্পর্কিত।");
+            nextDiseaseSelectStep.setText("চিকিৎসা দেয়ার জন্য পরবর্তী ধাপে যান");
 
             mBuilder.setView(mView);
             AlertDialog dialog = mBuilder.create();
@@ -226,8 +228,8 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.GONE);
             correctAns_disease.setVisibility(View.VISIBLE);
 
-            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা কনজাঙ্কটিভাইটিস এর সাথে পুরোপুরি সম্পকিত।");
-            nextDiseaseSelectStep.setText("চিকিৎসা দেয়ার জন্য পরবতী ধাপে যান");
+            diseaseAnsDetails.setText("কারণ এক্ষেত্রে যে লক্ষণগুলো ছিল তা কনজাঙ্কটিভাইটিস এর সাথে পুরোপুরি সম্পর্কিত।");
+            nextDiseaseSelectStep.setText("চিকিৎসা দেয়ার জন্য পরবর্তী ধাপে যান");
 
             mBuilder.setView(mView);
             AlertDialog dialog = mBuilder.create();
@@ -264,7 +266,7 @@ public class SelectDisease extends AppCompatActivity {
             wrongAns_disease.setVisibility(View.VISIBLE);
             correctAns_disease.setVisibility(View.GONE);
 
-            diseaseAnsDetails.setText("কারন এক্ষেত্রে যে লক্ষনগুলো ছিল তা কনজাঙ্কটিভাইটিস এর সাথে সম্পকিত নয়।");
+            diseaseAnsDetails.setText("কারন এক্ষেত্রে যে লক্ষনগুলো ছিল তা কনজাঙ্কটিভাইটিস এর সাথে সম্পর্কিত নয়।");
             nextDiseaseSelectStep.setText("দয়াকরে আবার চেষ্টা করুন");
 
             mBuilder.setView(mView);

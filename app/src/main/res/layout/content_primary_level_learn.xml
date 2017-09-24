@@ -58,7 +58,7 @@
                         android:padding="5dp"
                         android:text="চোখের প্রাথমিক ধারণা"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon1"
@@ -93,7 +93,7 @@
                         android:padding="5dp"
                         android:text="কনজাঙ্কটিভাইটিস / চোখ ওঠা"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon2"
@@ -136,7 +136,7 @@
                         android:padding="5dp"
                         android:text="গ্লুকোমা"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon3"
@@ -171,7 +171,7 @@
                         android:padding="5dp"
                         android:text="ক্যাটারাক্ট / চোখের ছানি"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon4"
@@ -213,7 +213,7 @@
                         android:padding="5dp"
                         android:text="রাতকানা"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon5"
@@ -247,7 +247,7 @@
                         android:padding="5dp"
                         android:text="ট্যারা চোখ"
                         android:textColor="@android:color/black"
-                        android:textSize="20sp" />
+                        android:textSize="17sp" />
 
                     <ImageView
                         android:id="@+id/primaryLearn_icon6"

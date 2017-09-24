@@ -32,6 +32,8 @@ public class PrimaryLevelCsaeSolve extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        setTitle("প্রাইমারী লেভেলের কেসসমূহ");
+
         //making multiple ans false for next attept
         StaticLogics.mul_treatment_Ans_count_1 = false;
         StaticLogics.mul_treatment_Ans_count_2=false;

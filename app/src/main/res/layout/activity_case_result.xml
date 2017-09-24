@@ -24,7 +24,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/caseCommentText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -32,7 +32,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="কেইসটি সফলভাবে সম্পন্ন করার জন্য আপনাকে অভিনন্দন!"
+        android:text="কেসটি সফলভাবে সম্পন্ন করার জন্য আপনাকে অভিনন্দন!"
         android:textColor="@android:color/black"
         android:textSize="19sp" />
 
@@ -53,7 +53,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/caseTotalNumberText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -61,7 +61,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="এই কেইস-এমোট নম্বর ৪০ "
+                android:text="এই কেস-এ মোট নম্বর ৪৫"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />

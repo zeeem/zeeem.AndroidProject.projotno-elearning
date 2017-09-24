@@ -99,8 +99,8 @@ public class PrimaryLevelLearn extends AppCompatActivity
 //            }
             lockedIcon4.setVisibility(View.GONE);
 
-            Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
-            StaticLogics.isCaseSolvingUnlocked = true;
+//            StaticLogics.isCaseSolvingUnlocked=true;
+//            Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
 
         }
 

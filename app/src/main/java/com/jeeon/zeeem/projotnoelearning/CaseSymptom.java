@@ -19,6 +19,8 @@ public class CaseSymptom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_case_symptom);
 
+        setTitle("কেস সমাধান");
+
         textCaseSymptom = (TextView) findViewById(R.id.textCaseSynptom);
         imageCaseSymptom = (ImageView) findViewById(R.id.imageCaseSymptom);
 
@@ -31,6 +33,8 @@ public class CaseSymptom extends AppCompatActivity {
             textCaseSymptom.setText("৩০ বছরের এক যুবক আপনার কাছে এসে বললো বেশ কিছুদিন হলো তার চোখ দুটোতে প্রচন্ড ব্যথা হচ্ছে ও  লাল হয়ে আছে।");
             imageCaseSymptom.setImageResource(R.drawable.case_symptom_2);
         }
+
+
 
     }
 

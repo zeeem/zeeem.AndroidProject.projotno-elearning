@@ -1,5 +1,7 @@
 package com.jeeon.zeeem.projotnoelearning;
 
+import android.content.Context;
+
 /**
  * Created by zeeem on 9/20/2017.
  */
@@ -38,4 +40,13 @@ public class StaticLogics {
     public static boolean mul_treatment_Ans_count_2 = false;
 
 
+
+
+
+//    public static void saveBackgroundData(){
+//
+//        MainActivity mainActivity = new MainActivity();
+//        mainActivity.saveData();
+//
+//    }
 }

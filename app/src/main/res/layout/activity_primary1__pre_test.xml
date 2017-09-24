@@ -16,7 +16,7 @@
         android:background="@drawable/pretest_textbox"
         android:gravity="center"
         android:padding="5dp"
-        android:text="চোখের প্রাথমিক ধারণা সম্পকিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন "
+        android:text="চোখের প্রাথমিক ধারণা সম্পর্কিত বিষয়বস্তু জানার আগে নিম্নের প্রশ্নগুলোর উত্তর দিন "
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="17sp"
         android:textStyle="bold" />
@@ -29,7 +29,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
-        android:text="প্র-১: নিচের তির চিহ্নিত অংশটির নাম কি? "
+        android:text="প্র-১: নিচের তীর চিহ্নিত অংশটির নাম কি? "
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 

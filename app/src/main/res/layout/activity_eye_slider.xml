@@ -29,11 +29,98 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="wrap_content"
+        android:gravity="fill_vertical|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12.93"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/miniSlideImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="0.06"
+            android:src="@drawable/eye_slider_1_countsing" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.06"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="none"
+            android:text="প্রযত্ন ও অরবিসের একটি সমন্বিত প্রচেষ্টা "
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".5"
+                app:srcCompat="@drawable/eye_slider_bottom_icon1" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5"
+                app:srcCompat="@drawable/eye_slider_bottom_icon2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_light"
+            android:drawableRight="@drawable/ic_menu_send"
+            android:onClick="goToNextPageFUNCITON"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="পরবতী ধাপে যান  "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

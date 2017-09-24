@@ -12,9 +12,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.ViewUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -36,6 +39,7 @@ public class EyeSlider extends AppCompatActivity {
      */
     private ViewPager mViewPager;
     int currentIndex=0; //for tracking current item
+    ImageView miniSlideImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +56,8 @@ public class EyeSlider extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        miniSlideImage = (ImageView) findViewById(R.id.miniSlideImage);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         //SLIDER ANIMATION
         final Handler handler = new Handler();
@@ -72,11 +69,18 @@ public class EyeSlider extends AppCompatActivity {
                         if((currentIndex+1)==mSectionsPagerAdapter.getCount()){
 
                             //goto next page
-                            goToNextPageFUNCITON();
-                            cancel();
-                            //currentIndex=0;
+                            //goToNextPageFUNCITON();
+                            //cancel();
+                            currentIndex=0;
+                            miniSlideImage.setImageResource(R.drawable.eye_slider_1_countsing);
                         }else{
                             currentIndex++;
+                            if(currentIndex==1)
+                                miniSlideImage.setImageResource(R.drawable.eye_slider_2_countsing);
+                            else if(currentIndex==2)
+                                miniSlideImage.setImageResource(R.drawable.eye_slider_3_countsing);
+                            else
+                                miniSlideImage.setImageResource(R.drawable.eye_slider_1_countsing);
                         }
                         mViewPager.setCurrentItem(currentIndex);
                     }
@@ -84,12 +88,12 @@ public class EyeSlider extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(timertask, 1500, 1500); //slide animation delay
+        timer.schedule(timertask, 2000, 2000); //slide animation delay
 
     }
 
     //go to nextpage
-    public void goToNextPageFUNCITON(){
+    public void goToNextPageFUNCITON(View view){
 
         //checking if the registration is done
         SharedPreferences prefs = getSharedPreferences(Registration.PREFS_NAME, 0);

@@ -11,7 +11,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:gravity="center_vertical|center_horizontal"
         android:orientation="vertical"
         android:weightSum="1">
@@ -35,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="0.06"
+            android:visibility="gone"
             app:srcCompat="@drawable/eye_slider_3_countsing" />
 
         <TextView
@@ -47,7 +49,8 @@
             android:inputType="none"
             android:text="প্রযত্ন ও অরবিসের একটি সমন্বিত প্রচেষ্টা "
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -56,6 +59,7 @@
             android:layout_weight="0.06"
             android:gravity="center"
             android:orientation="horizontal"
+            android:visibility="gone"
             android:weightSum="3">
 
             <ImageView

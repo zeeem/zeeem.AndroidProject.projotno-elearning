@@ -50,6 +50,7 @@ public class TestResult extends AppCompatActivity {
             StaticLogics.isPostTestCompleted=true;
             // Toast.makeText(this, "POST true - done", Toast.LENGTH_SHORT).show();
         }
+        else StaticLogics.isPostTestCompleted =false;
 
         if(StaticLogics.current_PrimaryLearning_LevelRunning==1){
             ResultTitle.setText("চোখের প্রাথমিক ধারনা ফলাফল");
@@ -136,22 +137,26 @@ public class TestResult extends AppCompatActivity {
     public void goToNextStep_result(View view){
 
 
-
-        StaticLogics.isPostTestCompleted = false;
-        StaticLogics.isPreTestCompleted = false;
         StaticLogics.PrimaryLearn1_PT_score = 0;
         StaticLogics.PrimaryLearn1_PostT_score =0;
         StaticLogics.PTquestionNum =1;
-        Toast.makeText(this, "new level unlocked", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "new level unlocked", Toast.LENGTH_SHORT).show();
 
-        if(StaticLogics.unlocked_primary_Learn_level>3){
+        if(StaticLogics.unlocked_primary_Learn_level>3 && StaticLogics.isPostTestCompleted){
+
             StaticLogics.isCaseSolvingUnlocked=true;
+            StaticLogics.isPostTestCompleted = false;
+            StaticLogics.isPreTestCompleted = false;
+
             Toast.makeText(this, "CASE SOLVE (level 1: Primary) - UNLOCKED", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, PrimaryLevelCsaeSolve.class);
             startActivity(intent);
 
         }
         else {
+            StaticLogics.isPostTestCompleted = false;
+            StaticLogics.isPreTestCompleted = false;
+
             Intent intent = new Intent(this, PrimaryLevelLearn.class);
             startActivity(intent);
         }

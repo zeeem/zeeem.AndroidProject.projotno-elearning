@@ -11,10 +11,19 @@ public class MainMenu extends Activity {
 
     boolean doubleBackToExitPressedOnce = false;
 
+    boolean quitApp = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        //exit on button pressing on Last Screeen
+        if (getIntent().getBooleanExtra("EXIT", false)) {
+            finish();
+            System.exit(0);
+        }
+
     }
 
     //double back to exit
